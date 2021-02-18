@@ -33,6 +33,29 @@ new Vue({
 
       ],
 
+      Build:[
+        {
+          code:'-1',
+          title:'Idea Discussion',
+          description:"Get teamed up with the specialist who work and teach coding for years at famous universities"
+        },
+        {
+          code:'-2',
+          title:'Web Development',
+          description:"Learn to start building a webpage from scratch.You decide your own pace, course and speed"
+        },
+        {
+          code:'-3',
+          title:'System Administration',
+          description:"Learners are encouraged to study the mechanism and structure of system administration"
+        },
+        {
+          code:'-4',
+          title:'Graphic Design',
+          description:"have a passion for graphic and arts? Show your talents with confidence and self-assertiveness"
+        },
+      ]
+
 
   },
 })
