@@ -7,7 +7,7 @@
 
 #project .main-header-background {
   width: 100%;
-  height: 700px;
+  height: 800px;
   background-image: url(../img/jumbo-overlay.svg);
   background-color: #dfdbd8;
 }
@@ -24,7 +24,6 @@
   justify-content: space-between;
   width: 100%;
   height: 60px;
-  border: 1px solid black;
 }
 #project .main-header-background-container .header-top-logo {
   width: 200px;
@@ -40,6 +39,7 @@
   display: inline;
   list-style: none;
   padding-left: 38px;
+  color: #534f74;
 }
 #project .main-header-background-container .header-top .menu-list .menu li i {
   font-size: 10px;
@@ -67,4 +67,47 @@
   right: 0;
   top: 14px;
   color: #20ad96;
+}
+#project .main-header-background-container .main-header-left {
+  width: 40%;
+  height: 80%;
+  border: 1px solid black;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#project .main-header-background-container .main-header-left .title {
+  font-size: 22px;
+  color: #3f3a64;
+}
+#project .main-header-background-container .main-header-left .description {
+  font-size: 18px;
+  padding: 25px 0 25px 0;
+}
+#project .main-header-background-container .main-header-left .description p {
+  padding-bottom: 8px;
+  color: #b4b1be;
+}
+#project .main-header-background-container .main-header-left .green-button {
+  color: #fff;
+  background-color: #20ad96;
+  padding: 18px 20px;
+  text-align: center;
+  width: 60%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#project .main-header-background-container .main-header-left .green-button:hover {
+  background: #534f74;
+}
+#project .main-header-background-container .main-header-right {
+  width: 60%;
+  height: 95%;
+  border: 1px solid black;
+  float: left;
+}
+#project .main-header-background-container .main-header-right .desk-image {
+  padding-top: 60px;
+  padding-left: 91px;
 }

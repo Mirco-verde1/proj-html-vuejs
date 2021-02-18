@@ -27,7 +27,7 @@
 
     &-background{
       width: 100%;
-      height: 700px;
+      height: 800px;
       background-image: url(../img/jumbo-overlay.svg);
       background-color: $bg-header;
 
@@ -41,7 +41,7 @@
           justify-content: space-between;
           width: 100%;
           height: 60px;
-          border: 1px solid black;
+
 
           &-logo{
             width: 200px;
@@ -54,6 +54,7 @@
             .menu{
               li{
                 @include list;
+                color:$menu-header;
                 i{font-size: 10px;}
               }
             }
@@ -75,12 +76,62 @@
                 position: absolute;
                 right: 0;
                 top: 14px;
-                color: #20ad96;
+                color:$common-green;
               }
 
             }
 
           }
+        }
+        // end header-top
+
+        .main-header-left{
+          width: 40%;
+          height: 80%;
+          border: 1px solid black;
+          float: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .title{
+
+              font-size:22px;
+              color:#3f3a64;
+          }
+
+          .description{
+            font-size: 18px;
+            padding: 25px 0 25px 0;
+            p{
+              padding-bottom: 8px;
+              color:#b4b1be;
+            }
+          }
+
+        .green-button{
+          @include button;
+          width: 60%;
+          border-radius: 5px;
+          cursor: pointer;}
+          .green-button:hover{
+            background:$menu-header;
+          }
+
+        }
+
+        .main-header-right{
+          width: 60%;
+          height: 95%;
+          border: 1px solid black;
+          float: left;
+
+          .desk-image{
+            padding-top: 60px;
+            padding-left: 91px;
+          }
+
+
         }
 
 
