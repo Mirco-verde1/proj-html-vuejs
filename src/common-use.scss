@@ -13,3 +13,13 @@
   text-align:center;
 
 }
+
+@mixin cart-zero {
+  background: $common-green;
+  position: absolute;
+  border-radius: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 0px;
+  right: 88%
+}

@@ -31,7 +31,6 @@
   width: 1100px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 #project .main-header-background-container .header-top {
   display: flex;
@@ -56,14 +55,28 @@
   list-style: none;
   padding-left: 38px;
   color: #534f74;
+  cursor: pointer;
 }
 #project .main-header-background-container .header-top .menu-list .menu li i {
   font-size: 10px;
+}
+#project .main-header-background-container .header-top .menu-list .menu li:hover {
+  color: #26214c;
 }
 #project .main-header-background-container .header-top .search-part {
   display: flex;
   margin-left: 10px;
   align-items: center;
+  position: relative;
+}
+#project .main-header-background-container .header-top .search-part .zero-green {
+  background: #20ad96;
+  position: absolute;
+  border-radius: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 0px;
+  right: 88%;
 }
 #project .main-header-background-container .header-top .search-part i {
   padding-right: 20px;
@@ -87,7 +100,6 @@
 #project .main-header-background-container .main-header-left {
   width: 40%;
   height: 80%;
-  border: 1px solid black;
   float: left;
   display: flex;
   flex-direction: column;
@@ -120,10 +132,35 @@
 #project .main-header-background-container .main-header-right {
   width: 60%;
   height: 95%;
-  border: 1px solid black;
   float: left;
 }
 #project .main-header-background-container .main-header-right .desk-image {
   padding-top: 60px;
   padding-left: 91px;
+}
+#project .main-build-dream {
+  width: 100%;
+  height: 800px;
+}
+#project .main-build-dream-container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+#project .main-build-dream-container .title {
+  text-align: center;
+}
+#project .main-build-dream-container .title p {
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: #696981;
+}
+#project .main-build-dream-container .title h1 {
+  display: inline;
+  color: #3f3a64;
+  font-size: 42px;
+}
+#project .main-build-dream-container .title span {
+  color: #20ad96;
+  font-size: 42px;
 }

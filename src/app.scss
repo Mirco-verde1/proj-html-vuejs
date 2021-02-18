@@ -51,7 +51,6 @@
 
       &-container{
         @include container;
-        border: 1px solid black;
 
         .header-top{
           @include flexCenter;
@@ -72,7 +71,12 @@
               li{
                 @include list;
                 color:$menu-header;
+                cursor: pointer;
+
                 i{font-size: 10px;}
+              }
+              li:hover{
+                color:#26214c;
               }
             }
           }
@@ -80,6 +84,11 @@
             display: flex;
             margin-left: 10px;
             align-items: center;
+            position: relative;
+
+            .zero-green{
+            @include cart-zero;
+            }
 
             i{padding-right: 20px;}
 
@@ -105,7 +114,6 @@
         .main-header-left{
           width: 40%;
           height: 80%;
-          border: 1px solid black;
           float: left;
           display: flex;
           flex-direction: column;
@@ -114,7 +122,7 @@
           .title{
 
               font-size:22px;
-              color:#3f3a64;
+              color:$common-purple;
           }
 
           .description{
@@ -140,7 +148,6 @@
         .main-header-right{
           width: 60%;
           height: 95%;
-          border: 1px solid black;
           float: left;
 
           .desk-image{
@@ -152,6 +159,31 @@
         }
 
 
+      }
+    }
+  }
+
+  .main-build-dream{
+    width: 100%;
+    height: 800px;
+
+    &-container{
+      @include container;
+
+      .title{
+        text-align:center;
+        p{
+          font-size: 15px;
+          padding-bottom: 20px;
+          color: #696981;
+        }
+        h1{display: inline;
+          color: $common-purple;
+           font-size: 42px;}
+        span{
+          color: $common-green;
+          font-size: 42px;
+        }
       }
     }
   }
