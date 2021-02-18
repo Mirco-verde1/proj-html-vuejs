@@ -2,26 +2,69 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.project .main-header-background {
+#project .main-header-background {
   width: 100%;
   height: 700px;
   background-image: url(../img/jumbo-overlay.svg);
   background-color: #dfdbd8;
 }
-.project .main-header-background-container {
-  width: 1050px;
+#project .main-header-background-container {
+  width: 1100px;
   height: 100%;
   margin: 0 auto;
   border: 1px solid black;
 }
-.project .main-header-background-container .header-top {
+#project .main-header-background-container .header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 60px;
   border: 1px solid black;
-  display: flex;
 }
-.project .main-header-background-container .header-top-logo img {
+#project .main-header-background-container .header-top-logo {
   width: 200px;
+}
+#project .main-header-background-container .header-top-logo img {
+  width: 80%;
+}
+#project .main-header-background-container .header-top .menu-list {
+  display: flex;
+  align-items: center;
+}
+#project .main-header-background-container .header-top .menu-list .menu li {
+  display: inline;
+  list-style: none;
+  padding-left: 38px;
+}
+#project .main-header-background-container .header-top .menu-list .menu li i {
+  font-size: 10px;
+}
+#project .main-header-background-container .header-top .search-part {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+#project .main-header-background-container .header-top .search-part i {
+  padding-right: 20px;
+}
+#project .main-header-background-container .header-top .search-part .searc-part-input {
+  position: relative;
+}
+#project .main-header-background-container .header-top .search-part .searc-part-input input {
+  width: 200px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+#project .main-header-background-container .header-top .search-part .searc-part-input i {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  color: #20ad96;
 }

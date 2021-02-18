@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <link rel="stylesheet" href="dist/app.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="project">
-<div class="main-header">
-  <div class="main-header-background">
-    <div class="main-header-background-container">
-      <div class="header-top">
-        <div class="header-top-logo">
-          <img src="img/dark-logo.png" alt="">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/app.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div id="project">
+    <div class="main-header">
+      <div class="main-header-background">
+        <div class="main-header-background-container">
+
+          <!-- logo e menu header -->
+          <div class="header-top">
+            <div class="header-top-logo">
+              <img src="img/dark-logo.png" alt="">
+            </div>
+            <div class="menu-list">
+              <div class="menu">
+
+                <!-- creazione dinamica item del menu -->
+                <ul>
+                  <li v-for="item in HeadMenu">{{item.name}}
+                    <i class="fas fa-chevron-down"></i></li>
+                  </ul>
+
+                  <!-- header parte destra dedicata alla search -->
+                </div>
+                <div class="search-part">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-user-circle"></i>
+                  <div class="searc-part-input">
+                    <input type="text" placeholder="Search..." value="">
+                    <i class="fas fa-search"></i>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</div>
-
 
 
 
 
 
     </div>
-<!-- end project -->
+    <!-- end project -->
 
 
 
-<script src="js/script.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
-</html>
+  </html>
