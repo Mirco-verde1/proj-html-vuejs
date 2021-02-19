@@ -301,6 +301,17 @@ $background: $common-green;
                   width: 100%;
                   height:auto;
                   border: 1 px solid black;
+                  background: $background-drop;
+                  &-menu{
+
+                    .title{
+                      padding: 20px;
+
+                      i{
+                        @include finger;
+                      }
+                    }
+                  }
                 }
 
              }

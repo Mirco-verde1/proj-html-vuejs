@@ -80,14 +80,19 @@ new Vue({
 
 
  ],
+
+ // oggetti che userò nella funzione backTrueOrFalse per
+ // modifica background in base al dropdown del menù
 backgroundTrue:{
   background:'#20ad96',
   color:'white',
 },
+
 backgroundFalse:{
   background:'black',
 }
  },
+
       methods: {
 
         showingMenu:function(index){

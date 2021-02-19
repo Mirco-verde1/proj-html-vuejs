@@ -263,4 +263,11 @@
   width: 100%;
   height: auto;
   border: 1 px solid black;
+  background: #f2f2f2;
+}
+#project .main-construct-container .construct-right .dropdown-part-menu .title {
+  padding: 20px;
+}
+#project .main-construct-container .construct-right .dropdown-part-menu .title i {
+  cursor: pointer;
 }
