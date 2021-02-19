@@ -107,12 +107,14 @@
           <span>TODAY</span>
         </div>
 
+<!-- creo dinamicamente il contenuto dei box tramite dato in Vue -->
       <div class="card-build-container">
         <div class="card-build-container-box" v-for="elem in Build">
           <img :src="'./img/build'+ elem.code +'.png'" alt="">
           <h1>{{elem.title}}</h1>
           <p>{{elem.description}}</p>
           <span>Start now</span>
+          <i class="fas fa-long-arrow-alt-right"></i>
 
         </div>
       </div>

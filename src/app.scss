@@ -32,7 +32,7 @@
       background-image: url(../img/jumbo-overlay.svg);
       background-color: $bg-header;
 
-// colonna loghi alla destra dell'header---------
+      // colonna loghi alla destra dell'header---------
       .logo-column{
         position: absolute;
         right:-4px;
@@ -40,6 +40,7 @@
         top: 40%;
         background: #fff;
         border-radius: 5px;
+
         ul{
           li{
             list-style:none;
@@ -48,7 +49,7 @@
           }
         }
       }
-// -------------------------------------
+      // -------------------------------------
 
       &-container{
         @include container;
@@ -68,6 +69,7 @@
           .menu-list{
             display: flex;
             align-items: center;
+
             .menu{
               li{
                 @include list;
@@ -76,6 +78,7 @@
 
                 i{font-size: 10px;}
               }
+
               li:hover{
                 color:#26214c;
               }
@@ -88,7 +91,7 @@
             position: relative;
 
             .zero-green{
-            @include cart-zero;
+              @include cart-zero;
             }
 
             i{padding-right: 20px;}
@@ -99,6 +102,7 @@
               input{
                 @include Search;
               }
+
               i{
                 position: absolute;
                 right: 0;
@@ -110,7 +114,7 @@
 
           }
         }
-// end header-top---------------------------------------
+        // end header-top---------------------------------------
 
         .main-header-left{
           width: 40%;
@@ -122,81 +126,114 @@
 
           .title{
 
-              font-size:22px;
-              color:$common-purple;
+            font-size:22px;
+            color:$common-purple;
           }
 
           .description{
             font-size: 18px;
             padding: 25px 0 25px 0;
+
             p{
               padding-bottom: 8px;
               color:#b4b1be;
             }
           }
 
-        .green-button{
-          @include button;
-          width: 60%;
-          border-radius: 5px;
-          cursor: pointer;}
-          .green-button:hover{
-            background:$menu-header;
+          .green-button{
+            @include button;
+            width: 60%;
+            border-radius: 5px;
+            cursor: pointer;}
+
+            .green-button:hover{
+              background:$menu-header;
+            }
+
           }
 
-        }
+          .main-header-right{
+            width: 60%;
+            height: 95%;
+            float: left;
 
-        .main-header-right{
-          width: 60%;
-          height: 95%;
-          float: left;
+            .desk-image{
+              padding-top: 60px;
+              padding-left: 91px;
+            }
 
-          .desk-image{
-            padding-top: 60px;
-            padding-left: 91px;
+
           }
 
 
-        }
-
-
-      }
-    }
-  }
-// Build your dream part---------------------------------------
-  .main-build-dream{
-    width: 100%;
-    height: 800px;
-
-    &-container{
-      @include container;
-
-      .title{
-        text-align:center;
-        p{
-          font-size: 15px;
-          padding-bottom: 20px;
-          color: #696981;
-        }
-        h1{display: inline;
-          color: $common-purple;
-           font-size: 42px;}
-        span{
-          color: $common-green;
-          font-size: 42px;
-        }
-      }
-
-      .card-build-container{
-        width: 100%;
-        height: 80%;
-        display: flex;
-        &-box{
-          width: 25%;
-          height: 100%;
-          border: 1px solid black;
         }
       }
     }
-  }
-}
+    // Build your dream part---------------------------------------
+    .main-build-dream{
+      width: 100%;
+      height: 600px;
+
+      &-container{
+        @include container;
+
+        .title{
+          text-align:center;
+          padding-bottom: 80px;
+
+          p{
+            font-size: 15px;
+            padding-bottom: 20px;
+            color: #696981;
+          }
+
+          h1{display: inline;
+            color: $common-purple;
+            font-size: 42px;}
+
+            span{
+              color: $common-green;
+              font-size: 42px;
+              font-family: sans-serif;
+            }
+          }
+          //  Build your dream boxes--------------------------------
+          .card-build-container{
+            width: 100%;
+            height: 80%;
+            display: flex;
+
+            &-box{
+              width: 25%;
+              height: 100%;
+              text-align: center;
+
+              h1{
+                font-size: 20px;
+                color: #3b3b3b;
+                padding-bottom: 19px;
+              }
+
+              p{font-size: 15px;
+                padding-bottom: 19px;
+                color:$grey-build;
+                font-weight:500;}
+                span{
+                  font-weight: bold;
+                  font-size: 13px;
+                  @include finger;
+                  color:$common-purple}
+
+                  i{
+                    @include finger;
+                    font-size: 13px;
+                    padding-left: 4px;
+                    color: $common-purple}
+                  }
+                }
+              }
+            }
+
+         .main-construct{}
+
+          }

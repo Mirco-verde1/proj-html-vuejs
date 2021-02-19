@@ -52,7 +52,7 @@ new Vue({
         {
           code:'-4',
           title:'Graphic Design',
-          description:"have a passion for graphic and arts? Show your talents with confidence and self-assertiveness"
+          description:"Have a passion for graphic and arts? Show your talents with confidence and self-assertiveness"
         },
       ]
 
