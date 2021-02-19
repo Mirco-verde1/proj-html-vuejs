@@ -5,7 +5,7 @@ new Vue({
  // oggetto in cui ci sono i dati dell'header
  // con possibilità di espanderlo successivamente
 
-   HeadMenu:[
+   headMenu:[
      {
         name:'Home',
         content:'',
@@ -33,7 +33,7 @@ new Vue({
 
       ],
 
-      Build:[
+      build:[
         {
           code:'-1',
           title:'Idea Discussion',
@@ -64,7 +64,7 @@ new Vue({
 
 
   // Construct row data
-  Construct:[
+  construct:[
     {
       title:'Multiple Platforms Supported for Teaching & Studying',
      text:"MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device."
@@ -78,23 +78,41 @@ new Vue({
      text:"MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device."
    },
 
-
  ],
 
- // oggetti che userò nella funzione backTrueOrFalse per
+ // oggetto che userò nella funzione backTrueOrFalse per
  // modifica background in base al dropdown del menù
 backgroundTrue:{
   background:'#20ad96',
   color:'white',
 },
 
-backgroundFalse:{
-  background:'black',
-}
+results:[
+  {
+    result:'finisched sessions',
+    numbers:'1.926'
+  },
+
+  {
+    result:'enrolled learners',
+    numbers:'3.092+'
+  },
+
+  {
+    result:'online instructors',
+    numbers:'200'
+  },
+
+  {
+    result:'satisfaction rate',
+    numbers:'100%'
+  }
+],
+
  },
 
       methods: {
-
+// attraverso il true/false mostro o meno i drop menu
         showingMenu:function(index){
           this.showMenu.show = !this.showMenu.show
           this.showMenu.index = index
@@ -106,8 +124,11 @@ backgroundFalse:{
           if (this.showMenu.show && this.showMenu.index === index) {
             return this.backgroundTrue;
           }
-        }
+        },
 
+        dropMenuOff:function(){
+          return this.showMenu.show = false;
+        },
 
       },
 

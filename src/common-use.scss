@@ -33,3 +33,21 @@
   height: 100%;
   float:left;
 }
+
+@mixin dropMenu {
+  padding: 22px;
+  color:$content-drop;
+  background: #fff;
+  box-shadow: 0 8px 6px -6px lightgrey;
+  height: 100%;
+  width: auto;
+}
+
+@mixin greyRowBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  height:100%;
+}

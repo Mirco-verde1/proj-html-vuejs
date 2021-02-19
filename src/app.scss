@@ -21,6 +21,12 @@
   height: 100%;
   margin: 0 auto;
 }
+
+@mixin shadow {
+  box-shadow: 0 8px 6px -6px $background-drop;
+  background: rgba(242, 242,242,0.2);
+  border-radius: 10px;
+}
 $background: $common-green;
 
 #project{
@@ -220,102 +226,162 @@ $background: $common-green;
                 padding-bottom: 19px;
                 color:$grey-build;
                 font-weight:500;}
-                span{
-                  font-weight: bold;
-                  font-size: 13px;
-                  @include finger;
-                  color:$common-purple}
 
-                  i{
-                    @include finger;
+                .start{
+                  width: 32%;
+                  display: contents;
+                  span{
+                    font-weight: bold;
                     font-size: 13px;
-                    padding-left: 4px;
-                    color: $common-purple}
+                    @include finger;
+                    color:$common-purple}
+
+                    i{
+                      @include finger;
+                      font-size: 13px;
+                      padding-left: 4px;
+                      color: $common-purple}
+
+                      }
+                    .start:hover{
+                      span{color:$common-green;}
+                      i{color:$common-green;}
+                    }
+
                   }
                 }
               }
             }
-// Start Construct a Career part-----------------------------------------
+            // Start Construct a Career part-----------------------------------------
 
-         .main-construct{
-           width: 100%;
-           height: 800px;
-           border: 1px solid black;
-           position: relative;
+            .main-construct{
+              width: 100%;
+              height: 800px;
+              position: relative;
 
-           .background-image{
-             position: absolute;
-             transform: translate(0,-50%);
-             top: 38%;
-             left: 10px;
-             width: 400px;
-             height: 500px;
+              .background-image{
+                position: absolute;
+                transform: translate(0,-50%);
+                top: 38%;
+                left: 10px;
+                width: 400px;
+                height: 500px;
 
-             img{
-               width: 100%;
-               height: 100%
-             }
-           }
+                img{
+                  width: 100%;
+                  height: 100%
+                }
+              }
 
-           &-container{
-             @include container;
-             border: 1px solid black;
+              &-container{
+                @include container;
 
-             .construct-left{
-              @include sharingAndFloat;
-               border: 1px solid black;
-               position: relative;
+                .construct-left{
+                  @include sharingAndFloat;
+                  position: relative;
 
-               img{
-                 position: absolute;
-                 left: 40px;
-               }
-             }
-             .construct-right{
-               @include sharingAndFloat;
-                border: 1px solid black;
+                  img{
+                    position: absolute;
+                    left: 40px;
+                  }
+                }
+                .construct-right{
+                  @include sharingAndFloat;
 
-                &-title{
-                  .title-up{
-                    color:$grey-build;
-                    padding-bottom: 20px;
+                  &-title{
+                    .title-up{
+                      color:$grey-build;
+                      padding-bottom: 30px;
 
-                    span{font-weight: lighter}
+                      span{font-weight: lighter}
+
+
                     }
 
                     .title-down{
                       font-size: 22px;
+
                       h1{display: inline;
-                      color:$common-purple;
-                    }
+                        color:$common-purple;
+                        margin-bottom: 30px;
+                      }
 
                       span{color:$common-green;
-                      font-size:44px;
-                    padding-left: 3px;}
+                        font-size:44px;
+                        padding-left: 3px;}
+                      }
+
+
                     }
-                }
 
-                // drop-down menu part-----------------------
+                    // drop-down menu part-----------------------
 
-                .dropdown-part{
-                  width: 100%;
-                  height:auto;
-                  border: 1 px solid black;
-                  background: $background-drop;
-                  &-menu{
+                    .dropdown-part{
+                      width: 100%;
+                      height:auto;
+                      box-shadow: 0 8px 6px -6px $background-drop;
+                      margin-top: 80px;
+                      border-radius: 10px;
 
-                    .title{
-                      padding: 20px;
+                      &-menu{
+                        @include shadow;
 
-                      i{
-                        @include finger;
+
+                        .title{
+                          @include shadow;
+                          padding: 20px;
+                          color: $drop-title;
+
+                          i{
+                            @include finger;
+                          }
+                        }
+
+                        .description{
+                          @include dropMenu;
+
+                        }
                       }
                     }
+
                   }
                 }
+              }
+// end construct e dropdown menu part-------------------------------------
 
-             }
-           }
-         }
+// start grey row----------------------------------------------------------
+.grey-row{
+  height: 300px;
+  width: 100%;
+  background: $grey-row;
 
-          }
+    &-container{
+      @include container;
+      display: flex;
+
+      &-boxes{
+        @include greyRowBox;
+        .numbers{
+          color: $common-green;
+          font-size: 40px;
+          font-weight: bold;
+          padding-bottom: 15px;
+          font-family: 'Noto Sans', sans-serif;
+        }
+
+        .result{
+          color:$grey-row-result;
+          font-weight: bolder;
+        }
+      }
+    }
+}
+
+// Start Cards row part-------------------------------------------------
+.main-cards-row{
+  height: 800px;
+  width: 100%;
+  background-color: linear-gradient(top bottom, #FFFFFF 0%, $grey-row 100%);
+}
+
+}

@@ -5,6 +5,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/app.css">
   <meta charset="utf-8">
   <title></title>
@@ -35,7 +37,7 @@
 
                 <!-- creazione dinamica item del menu -->
                 <ul>
-                  <li v-for="item in HeadMenu">{{item.name}}
+                  <li v-for="item in headMenu">{{item.name}}
                     <i class="fas fa-chevron-down"></i></li>
                   </ul>
 
@@ -110,12 +112,16 @@
 
           <!-- creo dinamicamente il contenuto dei box tramite dato in Vue -->
           <div class="card-build-container">
-            <div class="card-build-container-box" v-for="elem in Build">
+            <div class="card-build-container-box" v-for="elem in build">
               <img :src="'./img/build'+ elem.code +'.png'" alt="">
               <h1>{{elem.title}}</h1>
               <p>{{elem.description}}</p>
-              <span>Start now</span>
-              <i class="fas fa-long-arrow-alt-right"></i>
+
+              <div class="start">
+                <span>Start now</span>
+                <i class="fas fa-long-arrow-alt-right"></i>
+
+              </div>
 
             </div>
           </div>
@@ -150,11 +156,15 @@
 
             </div>
 
-            <!-- Dropdown menu -->
+
+  <!-- Dropdown menu con gestione del colore background del title||
+
+    cambio dell'icona in base a chiusura o apertura dropdown menu-->
+
 
             <div class="dropdown-part">
 
-              <div class="dropdown-part-menu" v-for="(item,index) in Construct">
+              <div class="dropdown-part-menu" v-for="(item,index) in construct" @mouseleave="dropMenuOff()">
 
                 <div class="title" :style="[backTrueOrFalse(index)]" >
                   {{item.title}}
@@ -178,6 +188,34 @@
 
         </div>
       </div>
+      <!-- end main costruct -->
+
+<!-- inizio grey row-------------------------------------->
+      <div class="grey-row">
+        <div class="grey-row-container">
+          <div class="grey-row-container-boxes" v-for="elem in results">
+            <div class="numbers">
+              {{elem.numbers}}
+            </div>
+            <div class="result">
+              {{elem.result.toUpperCase()}}
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+<!-- inizio cards row-------------------------------------------->
+
+<div class="main-cards-row">
+  <div class="main-cards-row-container">
+
+  </div>
+
+</div>
+
     </div>
     <!-- end project -->
 

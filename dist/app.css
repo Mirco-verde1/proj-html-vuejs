@@ -187,22 +187,31 @@
   color: #7b7b7b;
   font-weight: 500;
 }
-#project .main-build-dream-container .card-build-container-box span {
+#project .main-build-dream-container .card-build-container-box .start {
+  width: 32%;
+  display: contents;
+}
+#project .main-build-dream-container .card-build-container-box .start span {
   font-weight: bold;
   font-size: 13px;
   cursor: pointer;
   color: #3f3a64;
 }
-#project .main-build-dream-container .card-build-container-box i {
+#project .main-build-dream-container .card-build-container-box .start i {
   cursor: pointer;
   font-size: 13px;
   padding-left: 4px;
   color: #3f3a64;
 }
+#project .main-build-dream-container .card-build-container-box .start:hover span {
+  color: #20ad96;
+}
+#project .main-build-dream-container .card-build-container-box .start:hover i {
+  color: #20ad96;
+}
 #project .main-construct {
   width: 100%;
   height: 800px;
-  border: 1px solid black;
   position: relative;
 }
 #project .main-construct .background-image {
@@ -221,13 +230,11 @@
   width: 1100px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 #project .main-construct-container .construct-left {
   width: 50%;
   height: 100%;
   float: left;
-  border: 1px solid black;
   position: relative;
 }
 #project .main-construct-container .construct-left img {
@@ -238,11 +245,10 @@
   width: 50%;
   height: 100%;
   float: left;
-  border: 1px solid black;
 }
 #project .main-construct-container .construct-right-title .title-up {
   color: #7b7b7b;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 #project .main-construct-container .construct-right-title .title-up span {
   font-weight: lighter;
@@ -253,6 +259,7 @@
 #project .main-construct-container .construct-right-title .title-down h1 {
   display: inline;
   color: #3f3a64;
+  margin-bottom: 30px;
 }
 #project .main-construct-container .construct-right-title .title-down span {
   color: #20ad96;
@@ -262,12 +269,65 @@
 #project .main-construct-container .construct-right .dropdown-part {
   width: 100%;
   height: auto;
-  border: 1 px solid black;
-  background: #f2f2f2;
+  box-shadow: 0 8px 6px -6px #f2f2f2;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+#project .main-construct-container .construct-right .dropdown-part-menu {
+  box-shadow: 0 8px 6px -6px #f2f2f2;
+  background: rgba(242, 242, 242, 0.2);
+  border-radius: 10px;
 }
 #project .main-construct-container .construct-right .dropdown-part-menu .title {
+  box-shadow: 0 8px 6px -6px #f2f2f2;
+  background: rgba(242, 242, 242, 0.2);
+  border-radius: 10px;
   padding: 20px;
+  color: #696969;
 }
 #project .main-construct-container .construct-right .dropdown-part-menu .title i {
   cursor: pointer;
+}
+#project .main-construct-container .construct-right .dropdown-part-menu .description {
+  padding: 22px;
+  color: #7e7e7e;
+  background: #fff;
+  box-shadow: 0 8px 6px -6px lightgrey;
+  height: 100%;
+  width: auto;
+}
+#project .grey-row {
+  height: 300px;
+  width: 100%;
+  background: #faf8f6;
+}
+#project .grey-row-container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+#project .grey-row-container-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+}
+#project .grey-row-container-boxes .numbers {
+  color: #20ad96;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  font-family: "Noto Sans", sans-serif;
+}
+#project .grey-row-container-boxes .result {
+  color: #3f3a64;
+  font-weight: bolder;
+}
+#project .main-cards-row {
+  height: 800px;
+  width: 100%;
+  background-color: linear-gradient(top bottom, #FFFFFF 0%, #faf8f6 100%);
 }
