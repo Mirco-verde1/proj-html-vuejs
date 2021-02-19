@@ -27,3 +27,9 @@
 @mixin finger {
   cursor:pointer;
 }
+
+@mixin sharingAndFloat {
+  width: 50%;
+  height: 100%;
+  float:left;
+}

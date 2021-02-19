@@ -53,11 +53,60 @@ new Vue({
           code:'-4',
           title:'Graphic Design',
           description:"Have a passion for graphic and arts? Show your talents with confidence and self-assertiveness"
-        },
-      ]
+        }
+      ],
 
-
+  //imposto il mio drop-down
+  showMenu:{
+    show:false,
+    index:true,
   },
+
+
+  // Construct row data
+  Construct:[
+    {
+      title:'Multiple Platforms Supported for Teaching & Studying',
+     text:"MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device."
+   },
+    {
+      title:'Multiple course participation at the same time',
+     text:"MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device."
+   },
+    {
+      title:'Track Study Progress & Deliver Prompt Feedback',
+     text:"MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device."
+   },
+
+
+ ],
+backgroundTrue:{
+  background:'#20ad96',
+  color:'white',
+},
+backgroundFalse:{
+  background:'black',
+}
+ },
+      methods: {
+
+        showingMenu:function(index){
+          this.showMenu.show = !this.showMenu.show
+          this.showMenu.index = index
+          console.log(this.showMenu.show);
+          console.log(this.showMenu.index);
+        },
+
+        backTrueOrFalse:function(index){
+          if (this.showMenu.show && this.showMenu.index === index) {
+            return this.backgroundTrue;
+          }
+        }
+
+
+      },
+
+
 })
 
 Vue.config.devtools = true;

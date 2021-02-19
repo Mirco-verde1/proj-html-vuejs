@@ -140,7 +140,7 @@
 }
 #project .main-build-dream {
   width: 100%;
-  height: 600px;
+  height: 800px;
 }
 #project .main-build-dream-container {
   width: 1100px;
@@ -149,7 +149,7 @@
 }
 #project .main-build-dream-container .title {
   text-align: center;
-  padding-bottom: 80px;
+  padding: 120px 120px;
 }
 #project .main-build-dream-container .title p {
   font-size: 15px;
@@ -198,4 +198,69 @@
   font-size: 13px;
   padding-left: 4px;
   color: #3f3a64;
+}
+#project .main-construct {
+  width: 100%;
+  height: 800px;
+  border: 1px solid black;
+  position: relative;
+}
+#project .main-construct .background-image {
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 38%;
+  left: 10px;
+  width: 400px;
+  height: 500px;
+}
+#project .main-construct .background-image img {
+  width: 100%;
+  height: 100%;
+}
+#project .main-construct-container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+#project .main-construct-container .construct-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  border: 1px solid black;
+  position: relative;
+}
+#project .main-construct-container .construct-left img {
+  position: absolute;
+  left: 40px;
+}
+#project .main-construct-container .construct-right {
+  width: 50%;
+  height: 100%;
+  float: left;
+  border: 1px solid black;
+}
+#project .main-construct-container .construct-right-title .title-up {
+  color: #7b7b7b;
+  padding-bottom: 20px;
+}
+#project .main-construct-container .construct-right-title .title-up span {
+  font-weight: lighter;
+}
+#project .main-construct-container .construct-right-title .title-down {
+  font-size: 22px;
+}
+#project .main-construct-container .construct-right-title .title-down h1 {
+  display: inline;
+  color: #3f3a64;
+}
+#project .main-construct-container .construct-right-title .title-down span {
+  color: #20ad96;
+  font-size: 44px;
+  padding-left: 3px;
+}
+#project .main-construct-container .construct-right .dropdown-part {
+  width: 100%;
+  height: auto;
+  border: 1 px solid black;
 }
