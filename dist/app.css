@@ -327,19 +327,20 @@
   font-weight: bolder;
 }
 #project .main-cards-row {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   background-image: linear-gradient(to bottom, #fff 30%, #e6e6e6 100%);
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
 }
 #project .main-cards-row-container {
   width: 1100px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 #project .main-cards-row-container .title {
-  padding-top: 85px;
   text-align: center;
+  margin: 40px 30px;
 }
 #project .main-cards-row-container .title p {
   color: #696969;
@@ -359,11 +360,35 @@
 }
 #project .main-cards-row-container .cards-container {
   width: 100%;
-  height: 80%;
-  border: 1px solid black;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #project .main-cards-row-container .cards-container .card {
-  width: 30%;
+  width: 32%;
   height: 50%;
   border: 1px solid black;
+}
+#project .main-cards-row-container .cards-container .card .box-image {
+  height: 50%;
+}
+#project .main-cards-row-container .cards-container .card .box-image img {
+  width: 100%;
+  height: auto;
+}
+#project .main-cards-row-container .cards-container .card .description {
+  margin-top: 48px;
+  padding-left: 28px;
+  width: 100%;
+  height: 50%;
+}
+#project .main-cards-row-container .cards-container .card .description .logo {
+  height: 64px;
+  width: 38px;
+}
+#project .main-cards-row-container .cards-container .card .description .logo img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
 }

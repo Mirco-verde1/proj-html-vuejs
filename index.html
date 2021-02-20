@@ -217,8 +217,22 @@
       <span>Courses</span>
 
     </div>
+    
     <div class="cards-container">
-      <div class="card">
+
+      <!-- card img -->
+      <div class="card" v-for="(item,index) in teachers">
+        <div class="box-image">
+          <img :src="'./img/card' + item.code + '.jpg'" alt="">
+        </div>
+
+        <!--text and logo under img  -->
+        <div class="description">
+          <div class="logo">
+            <img :src="'./img/' + item.logo + '.jpeg' " alt="">
+          </div>
+        </div>
+
 
       </div>
     </div>
