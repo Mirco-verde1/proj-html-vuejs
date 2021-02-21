@@ -27,7 +27,10 @@
   background: rgba(242, 242,242,0.2);
   border-radius: 10px;
 }
+
 $background: $common-green;
+
+$fontNumbers: 'Mukta', sans-serif;
 
 #project{
 
@@ -155,7 +158,7 @@ $background: $common-green;
             cursor: pointer;}
 
             .green-button:hover{
-              background:$menu-header;
+              @include hoverButton;
             }
 
           }
@@ -242,7 +245,7 @@ $background: $common-green;
                       padding-left: 4px;
                       color: $common-purple}
 
-                      }
+                    }
                     .start:hover{
                       span{color:$common-green;}
                       i{color:$common-green;}
@@ -295,7 +298,6 @@ $background: $common-green;
 
                       span{font-weight: lighter}
 
-
                     }
 
                     .title-down{
@@ -310,7 +312,6 @@ $background: $common-green;
                         font-size:44px;
                         padding-left: 3px;}
                       }
-
 
                     }
 
@@ -347,106 +348,360 @@ $background: $common-green;
                   }
                 }
               }
-// end construct e dropdown menu part-------------------------------------
+              // end construct e dropdown menu part-------------------------------------
 
-// start grey row----------------------------------------------------------
-.grey-row{
-  height: 300px;
-  width: 100%;
-  background: $grey-row;
+              // start grey row----------------------------------------------------------
+              .grey-row{
+                height: 300px;
+                width: 100%;
+                background: $grey-row;
 
-    &-container{
-      @include container;
-      display: flex;
+                &-container{
+                  @include container;
+                  display: flex;
 
-      &-boxes{
-        @include greyRowBox;
-        .numbers{
-          color: $common-green;
-          font-size: 40px;
-          font-weight: bold;
-          padding-bottom: 15px;
-          font-family: 'Noto Sans', sans-serif;
-        }
+                  &-boxes{
+                    @include greyRowBox;
+                    .numbers{
+                      color: $common-green;
+                      font-size: 40px;
+                      font-weight: bold;
+                      padding-bottom: 15px;
+                      font-family: 'Noto Sans', sans-serif;
+                    }
 
-        .result{
-          color:$grey-row-result;
-          font-weight: bolder;
-        }
-      }
-    }
-}
+                    .result{
+                      color:$grey-row-result;
+                      font-weight: bolder;
+                    }
+                  }
+                }
+              }
 
-// Start Cards row part-------------------------------------------------
-.main-cards-row{
-  height: 1000px;
-  width: 100%;
-  background-image: linear-gradient(to bottom, #fff 30%, 	#e6e6e6 100%);
-  border-bottom-left-radius: 200px;
-  border-bottom-right-radius:200px;
+              // Start Cards row part-------------------------------------------------
+              .main-cards-row{
+                height: 1260px;
+                width: 100%;
+                background-image: linear-gradient(to bottom, #fff 30%, 	#e6e6e6 100%);
+                border-bottom-left-radius: 150px;
+                border-bottom-right-radius:150px;
 
-  &-container{
-    @include container;
+                &-container{
+                  @include container;
 
-    .title{
-      text-align:center;
-      margin: 40px 30px;
+                  .title{
+                    text-align:center;
+                    margin: 40px 30px;
 
-      p{color:$drop-title;
-      font-size:20px;
-      padding-bottom: 20px;}
+                    p{color:$drop-title;
+                      font-size:20px;
+                      padding-bottom: 20px;}
 
-      h1{display: inline;
-       color:$common-purple;
-       font-size: 50px;
-       font-weight: bold;}
+                      h1{display: inline;
+                        color:$common-purple;
+                        font-size: 50px;
+                        font-weight: bold;}
 
-      span{color:$common-green;
-      font-size: 50px;
-      font-family:sans-serif;
-       }
+                        span{color:$common-green;
+                          font-size: 50px;
+                          font-family:sans-serif;
+                        }
 
-    }
-// Inizio cards--------------------------------
-    .cards-container{
-    @include cardContainer;
+                      }
+                      // Inizio cards--------------------------------
+                      .cards-container{
+                        @include cardContainer;
 
-      .card{
-        width: 32%;
-        height: 50%;
-        border: 1px solid black;
+                        .card{
+                          width: 32%;
+                          height: 52%;
 
-        .box-image{
-          height: 50%;
-          img{
-            width: 100%;
-            height: auto;
-          }
 
-        }
+                          .box-image{
+                            height: 50%;
+                            position: relative;
 
-      .description{
-        margin-top: 48px;
-        padding-left: 28px;
-        width: 100%;
-        height: 50%;
+                            img{
+                              @include finger;
+                              width: 100%;
+                              height: auto;
+                              border-radius: 5px;
+                            }
 
-        .logo{
+                            span{
+                              @include priceCard;
+                            }
 
-          height: 64px;
-          width: 38px;
+                          }
 
-          img{
-            border-radius: 50%;
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
+                          .description{
+                            margin-top: 22px;
+                            padding-left: 28px;
+                            width: 100%;
+                            height: 50%;
 
-      }
-    }
-  }
-}
+                            .logo{
+                              display: flex;
+                              width: 36px;
+                              padding-bottom: 16px;
+                              align-items: center;
 
-}
+                              img{
+                                border-radius:50%;
+                                width: 100%;
+                                height: auto;
+                                margin-right: 10px;
+                              }
+
+                              span{
+                                color:$drop-title;
+                                display: inline-table;
+                                width: 180px;
+                              }
+
+                            }
+                            .teacher-course{
+                              padding-bottom: 35px;
+
+                              h2{font-size:22px;
+                                color: #333; }
+                              }
+
+                              .lessons-students{
+                                display: flex;
+                                color:$drop-title;
+
+                                .lessons{
+                                  padding-right: 25px;
+
+                                  i{
+                                    padding-right: 3px;
+                                  }
+
+
+                                }
+
+                                .students{
+                                  i{padding-right: 3px;}
+                                }
+                              }
+
+                            }
+
+                          }
+                        }
+                        // end card container-----------------------
+                        .card-button{
+                          margin: 50px;
+                          @include flexCenter;
+
+                          .content{
+                            @include finger;
+                            border-radius: 5px;
+                            @include flexCenter;
+                            @include button;
+                            width: 24%;
+                            height: 50px;
+                            span{
+                              margin-right: 5px;
+                            }
+
+                          }
+                          .content:hover{
+                            @include hoverButton;
+                          }
+
+                        }
+                      }
+                    } // end card part-------------------------------------------------
+
+
+                    // start Learn At your own part-------------------------------------
+
+                    .main-learn-yourown{
+                      width: 100%;
+                      height: 600px;
+                      position: relative;
+
+                      .box-images{
+                        position: absolute;
+                        top: 26%;
+                        left: 42%;
+                        width: 400px;
+                        height: 500px;
+
+                        img{
+                          width: 100%;
+                          height: 100%;
+                        }
+                        span{
+                          width: 100px;
+
+                          img{
+                            top: 38%;
+                            height: auto;
+                            width: 150px;
+                            position: absolute;
+                          }
+                        }
+                      }
+
+
+                      &-container{
+                        @include container;
+
+                        .left-content{
+                          @include fiftyFifty;
+
+                          .main-content{
+
+                            margin-top: 90px;
+
+                            .up-title{
+                              color:$common-purple;
+                              margin-bottom: 30px;
+
+                              p{
+                                margin: 30px 0 20px 0;
+                                color:$drop-title;
+                                font-weight: 600;
+                              }
+
+                              h1{
+                                display: inline;
+                                font-weight: bold;
+                                font-size: 45px;
+                              }
+
+                              span{
+                                color:$common-green;
+                                font-size: 45px;
+                                font-family: sans-serif;
+                                padding-left: 10px;
+                              }
+
+                            }
+                            .choice-list{
+                              ul{
+                                li{
+                                  list-style: none;
+                                  padding-bottom: 20px;
+                                  color:$grey-build;
+                                  font-weight: 600;
+
+                                  i{
+                                    color:$common-green;
+                                    padding-right: 8px;
+                                    font-size: 14px;
+
+                                  }
+
+                                  span{
+                                    font-size: 15px;
+                                  }
+
+                                }
+                              }
+                            }
+
+                            .get-start-button{
+                              @include button;
+                              @include flexCenter;
+                              width: 198px;
+                              font-size: 15px;
+                              margin-top: 20px;
+                              border-radius: 5px;
+
+                            }
+                            .get-start-button:hover{
+                              @include hoverButton;
+                            }
+                          }
+                        }
+
+                        .right-content{
+                          @include fiftyFifty;
+
+                          .desk-image{
+
+                            img{
+                              position: absolute;
+                              top: 18%;
+                              width: 400px;
+                              height: 451px;
+                            }
+                          }
+                        }
+
+                      }
+                    }
+                    // end Learn at your own part-------------------------------
+
+                    // start Learn Anytime part---------------------------------
+
+                    .main-learn-anytime{
+                      width: 100%;
+                      height: 800px;
+                      position: relative;
+                      border: 1px solid black;
+
+                      .box-image{
+                        img{
+                          position: absolute;
+                          width: 400px;
+                          transform: translate(0,-50%);
+                          top: 51%;
+                          left: 11%;
+                        }
+                      }
+
+                      .box-stripes{
+                        img{
+                          position: absolute;
+                          top: 41%;
+                          left: 4%;
+                        }
+                      }
+
+                      .points-image{
+                        img{
+                          position: absolute;
+                          left: 38%;
+                          top: 49%;
+                        }
+                      }
+
+                      &-container{
+                        @include container;
+                        border: 1px solid black;
+                        position: relative;
+
+                        .left-part{
+                          @include fiftyFifty;
+                          height: 100%;
+                          border: 1px solid black;
+                          //
+                          //
+                          // .cellular-image{
+                          //   img{
+                          //     position: absolute;
+                          //     left: 19%;
+                          //     top: 10%;
+                          //     width: 27%;
+                          //   }
+                          // }
+
+
+                        }
+
+                        .right-part{
+                          @include fiftyFifty;
+                          border: 1px solid black;
+
+
+
+                        }
+                      }
+                    }
+
+                  }

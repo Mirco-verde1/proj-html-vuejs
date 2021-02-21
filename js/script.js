@@ -117,7 +117,7 @@ results:[
    job:'Learning to Write as a professional Author',
    lessons:'20',
    students:'50',
-   cost:'40.00'
+   cost:'$40.00'
 },
   { code:'_2',
    logo:'Maggie',
@@ -133,7 +133,7 @@ results:[
    job:'Open Programming Courses for Everyone:Python',
    lessons:'17',
    students:'62',
-   cost:'19.00'
+   cost:'$19.00'
 },
   { code:'_4',
    logo:'Blanche',
@@ -141,7 +141,7 @@ results:[
    job:'Academic Listening and Note-taking',
    lessons:'14',
    students:'67',
-   cost:'26.00'
+   cost:'$26.00'
 },
   { code:'_5',
    logo:'Blanche',
@@ -149,7 +149,7 @@ results:[
    job:'Master jQuery in a Short Period of Time',
    lessons:'6',
    students:'51',
-   cost:'39.00'
+   cost:'$39.00'
 },
   { code:'_6',
    logo:'Blanche',
@@ -157,7 +157,7 @@ results:[
    job:'Introduction to Javascript for Beginners',
    lessons:'14',
    students:'76',
-   cost:'59.00'
+   cost:'$59.00'
 }
  ],
 },

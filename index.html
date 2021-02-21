@@ -6,8 +6,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/app.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <title></title>
 </head>
@@ -93,7 +95,7 @@
             </div>
 
           </div>
-          <!-- end header-container ---------------->
+          <!-- end header-container ------------------------------------>
 
 
         </div>
@@ -128,7 +130,7 @@
         </div>
       </div>
 
-      <!-- Inzio Construct a Career Part ------------------------->
+      <!-- Inzio Construct a Career Part ------------------------------------->
 
       <div class="main-construct">
         <div class="background-image">
@@ -157,9 +159,9 @@
             </div>
 
 
-  <!-- Dropdown menu con gestione del colore background del title||
+            <!-- Dropdown menu con gestione del colore background del title||
 
-    cambio dell'icona in base a chiusura o apertura dropdown menu-->
+            cambio dell'icona in base a chiusura o apertura dropdown menu-->
 
 
             <div class="dropdown-part">
@@ -177,7 +179,7 @@
 
                 </div>
                 <div class="description" v-if="showMenu.show && showMenu.index === index">
-                   {{item.text}}
+                  {{item.text}}
                 </div>
 
               </div>
@@ -190,7 +192,7 @@
       </div>
       <!-- end main costruct -->
 
-<!-- inizio grey row-------------------------------------->
+      <!-- inizio grey row-------------------------------------->
       <div class="grey-row">
         <div class="grey-row-container">
           <div class="grey-row-container-boxes" v-for="elem in results">
@@ -207,45 +209,185 @@
         </div>
 
       </div>
-<!-- inizio cards row-------------------------------------------->
+      <!-- inizio cards row-------------------------------------------->
 
-<div class="main-cards-row">
-  <div class="main-cards-row-container">
-    <div class="title">
-      <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
-      <h1>Latest Featured</h1>
-      <span>Courses</span>
+      <div class="main-cards-row">
+        <div class="main-cards-row-container">
+          <div class="title">
+            <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
+            <h1>Latest Featured</h1>
+            <span>Courses</span>
 
-    </div>
-    
-    <div class="cards-container">
-
-      <!-- card img -->
-      <div class="card" v-for="(item,index) in teachers">
-        <div class="box-image">
-          <img :src="'./img/card' + item.code + '.jpg'" alt="">
-        </div>
-
-        <!--text and logo under img  -->
-        <div class="description">
-          <div class="logo">
-            <img :src="'./img/' + item.logo + '.jpeg' " alt="">
           </div>
-        </div>
 
+          <div class="cards-container">
+
+            <!-- card img -->
+            <div class="card" v-for="(item,index) in teachers">
+              <div class="box-image">
+                <img :src="'./img/card' + item.code + '.jpg'" alt="">
+                <span :style="[backgroundTrue]">{{item.cost}}</span>
+              </div>
+
+              <!--text and logo under img  -->
+              <div class="description">
+                <div class="logo">
+                  <img :src="'./img/' + item.logo + '.jpeg' " alt="">
+                  <span>{{item.name}}</span>
+                </div>
+
+                <div class="teacher-course">
+                  <h2>{{item.job}}</h2>
+
+                </div>
+
+                <!-- students and lessons data -->
+                <div class="lessons-students">
+
+                  <div class="lessons">
+                    <i class="far fa-file-alt"></i>
+                    {{item.lessons}}
+                    <span>Lessons</span>
+                  </div>
+
+                  <div class="students">
+                    <i class="far fa-user"></i>
+                    {{item.students}}
+                    <span>Students</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="card-button">
+            <div class="content">
+              <span>View all courses</span>
+              <i class="fas fa-long-arrow-alt-right"></i>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
-    </div>
+      <!-- end cards container --------------------------------------------->
 
+
+      <!-- start Learn At your Own part ------------------------------------------->
+
+      <div class="main-learn-yourown">
+        <div class="box-images">
+
+          <img src="./img/underlay-shape-grey.svg" alt="">
+          <span><img src="./img/maxcoach-shape-05-100.png" alt=""></span>
+
+        </div>
+        <div class="main-learn-yourown-container">
+
+          <div class="left-content">
+
+            <div class="main-content">
+              <div class="up-title">
+                <p>WHY HESITATE TO REGISTER?</p>
+                <h1>Learn At Your <br> Own</h1>
+                <span>Pace</span>
+              </div>
+
+              <div class="choice-list">
+                <ul>
+                  <li>
+
+                    <i class="fas fa-check"></i>
+                    <span>Select & customize courses to your preferences</span>
+
+                  </li>
+                  <li>
+
+                    <i class="fas fa-check"></i>
+                    <span>Change the tutor and make arrangements</span>
+
+                  </li>
+                  <li>
+
+                    <i class="fas fa-check"></i>
+                    <span>Posticipate in events to join others</span>
+
+                  </li>
+                  <li>
+
+                    <i class="fas fa-check"></i>
+                    <span>Get the desired certificate delivered at house</span>
+
+                  </li>
+                </ul>
+              </div>
+
+              <div class="get-start-button">
+                <h3>Get start for free</h3>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="right-content">
+            <div class="desk-image">
+              <img src="./img/home-5-image-01.png" alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end  Learn at your own part ---------------------------------------->
+
+
+      <!-- start Learn Anytime part-------------------------------------------------->
+      <div class="main-learn-anytime">
+
+        <div class="box-image">
+          <img src="./img/underlay-shape-grey.svg" alt="">
+        </div>
+
+        <div class="box-stripes">
+          <img src="./img/maxcoach-shape-01.png" alt="">
+        </div>
+
+        <div class="points-image">
+          <img src="./img/maxcoach-shape150.png" alt="">
+
+        </div>
+        
+        <div class="main-learn-anytime-container">
+
+
+          <div class="left-part">
+            <!--
+            <div class="cellular-image">
+            <img src="./img/cell-image.png" alt="">
+          </div> -->
+
+        </div>
+
+        <div class="right-part">
+
+        </div>
+
+      </div>
+
+    </div>
   </div>
-
-</div>
-
-    </div>
-    <!-- end project -->
+  <!-- end project -->
 
 
 
-    <script src="js/script.js" charset="utf-8"></script>
-  </body>
-  </html>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
