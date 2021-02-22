@@ -774,7 +774,7 @@
 }
 #project .container-background .main-praising-maxcoach {
   width: 100%;
-  height: 1100px;
+  height: 1200px;
   background: #faf8f6;
   position: relative;
   top: -300px;
@@ -786,7 +786,7 @@
   margin: 0 auto;
 }
 #project .container-background .main-praising-maxcoach-container .main-content {
-  padding-top: 28%;
+  padding-top: 24%;
   border: 1px solid black;
   height: 1100px;
   display: flex;
@@ -795,7 +795,7 @@
 }
 #project .container-background .main-praising-maxcoach-container .main-content .title {
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 145px;
 }
 #project .container-background .main-praising-maxcoach-container .main-content .title h5 {
   color: #8c89a2;
@@ -813,6 +813,26 @@
 }
 #project .container-background .main-praising-maxcoach-container .main-content .rating-container {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid black;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .card {
+  height: 100%;
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-right: 20px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .card .logo {
+  position: relative;
+  top: -72px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .card .logo img {
+  border-radius: 50%;
+  width: 130px;
 }

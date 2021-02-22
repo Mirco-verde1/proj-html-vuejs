@@ -478,7 +478,8 @@
         </div>
         <!-- end Upcoming Events------------------------------------------------------->
 
-        <!-- Start -->
+
+        <!-- Start praising maxcoach-->
 
         <div class="main-praising-maxcoach">
           <div class="main-praising-maxcoach-container">
@@ -491,11 +492,29 @@
                 <span>love us?</span>
               </div>
 
+              <!-- mostro i dati e le immagini degli studenti -->
               <div class="rating-container">
 
-                <div class="card">
+                <div class="card" v-for="(elem,index) in testimonials[idxTestimonials].students">
+
+                  <div class="logo">
+                    <img :src="'./img/testimonial' + elem.logo + '.jpg'" alt="">
+                  </div>
+
+                  <div class="opinion">
+                    <p>{{elem.opinion}}</p>
+                  </div>
+
+                  <div class="name">
+                    <span>{{elem.name}}</span>
+                  </div>
+
+                  <div class="job">
+                    <span>/{{elem.job}}</span>
+                  </div>
 
                 </div>
+
               </div>
 
             </div>

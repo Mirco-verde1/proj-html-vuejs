@@ -2,6 +2,11 @@ new Vue({
   el:'#project',
   data:{
 
+
+idxTestimonials: 0,
+idxPoint:0,
+
+
  // oggetto in cui ci sono i dati dell'header
  // con possibilità di espanderlo successivamente
 
@@ -215,6 +220,140 @@ results:[
    },
 
  ],
+
+ // Praising MaxCoach part----------------
+
+ testimonials:[
+
+{
+   students:[
+
+     {
+       logo:'-1',
+       opinion: "I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal people like me.",
+       name:'Mina Hollace',
+       job:'Freelancer'
+
+     },
+
+     {
+       logo:'-2',
+       opinion: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students",
+       name:'Madley Pondor',
+       job:'IT specialist'
+
+     },
+
+     {
+       logo:'-3',
+       opinion: "I am happy with their arrangement of leassons and subject. They reflect a scientific investigation",
+       name:'Luvic Dubble',
+       job:'Private Tutor'
+
+     },
+
+],
+
+},
+
+{
+   students:[
+
+     {
+       logo:'-4',
+       opinion: "I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal people like me.",
+       name:'Jack Jonson',
+       job:'Java developer'
+
+     },
+
+     {
+       logo:'-3',
+       opinion: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students",
+       name:'Luvic Dubble',
+       job:'Private Tour'
+
+     },
+
+     {
+       logo:'-2',
+       opinion: "I am happy with their arrangement of leassons and subject. MaxCoach was my best choice.",
+       name:'Luvic Dubble',
+       job:'Private Tutor'
+
+     },
+
+],
+
+},
+
+
+{
+   students:[
+
+     {
+       logo:'-2',
+       opinion: "I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal people like me.",
+       name:'Madley Pondor',
+       job:'IT specialist'
+
+     },
+
+     {
+       logo:'-4',
+       opinion: "I am happy with their arrangement of leassons and subject. They reflect a scientific investigation",
+       name:'Jack Jonson',
+       job:'Java developer'
+
+     },
+
+     {
+       logo:'-1',
+       opinion: "I am happy with their arrangement of leassons and subject. MaxCoach was my best choice.",
+       name:'Mina Hollace',
+       job:'Freelancer'
+
+     },
+
+],
+
+},
+
+
+{
+   students:[
+
+     {
+       logo:'-4',
+       opinion: "I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal people like me.",
+       name:'Jack Jonson',
+       job:'Java developer'
+
+     },
+
+     {
+       logo:'-3',
+       opinion: "I am happy with their arrangement of leassons and subject. MaxCoach was my best choice.",
+       name:'Madley Pondor',
+       job:'IT specialist'
+
+     },
+
+     {
+       logo:'-1',
+       opinion: "I am happy with their arrangement of leassons and subject. MaxCoach was my best choice.",
+       name:'Mina Hollace',
+       job:'Freelancer'
+
+     },
+
+],
+
+},
+
+ ],
+
+
 },
       methods: {
 // attraverso il true/false mostro o meno i drop menu
