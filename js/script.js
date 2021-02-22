@@ -6,6 +6,27 @@ new Vue({
 idxTestimonials: 0,
 idxPoint:0,
 
+ // oggetto che userò nella funzione backTrueOrFalse per
+ // modifica background in base al dropdown del menù
+
+backgroundTrue:{
+  background:'#20ad96',
+  color:'white',
+},
+
+
+  //imposto il mio drop-down
+  showMenu:{
+    show:false,
+    index:true,
+  },
+
+// oggetto che userò per colorare il punto premuto nello slider
+  coloredPoint:{
+    color:'#3f3a64',
+    'font-size': '15px'
+  },
+
 
  // oggetto in cui ci sono i dati dell'header
  // con possibilità di espanderlo successivamente
@@ -61,11 +82,6 @@ idxPoint:0,
         }
       ],
 
-  //imposto il mio drop-down
-  showMenu:{
-    show:false,
-    index:true,
-  },
 
 
   // Construct row data
@@ -84,14 +100,6 @@ idxPoint:0,
    },
 
  ],
-
- // oggetto che userò nella funzione backTrueOrFalse per
- // modifica background in base al dropdown del menù
-
-backgroundTrue:{
-  background:'#20ad96',
-  color:'white',
-},
 
 
 results:[
@@ -340,7 +348,7 @@ results:[
      },
 
      {
-       logo:'-1',
+       logo:'-2',
        opinion: "I am happy with their arrangement of leassons and subject. MaxCoach was my best choice.",
        name:'Mina Hollace',
        job:'Freelancer'
@@ -374,6 +382,18 @@ results:[
           return this.showMenu.show = false;
         },
 
+// tramite il click avvio lo scorrimento immagini dello slider
+        clickCircle:function(index){
+          return this.idxTestimonials = index;
+        },
+
+// coloro i points dello slider in base all'index del point cliccato
+        colorPoint:function(index){
+          if (this.idxTestimonials === index) {
+                return this.coloredPoint;
+          }
+
+        },
       },
 
 

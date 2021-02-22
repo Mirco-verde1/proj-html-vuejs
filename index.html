@@ -505,14 +505,23 @@
                     <p>{{elem.opinion}}</p>
                   </div>
 
-                  <div class="name">
-                    <span>{{elem.name}}</span>
+                  <div class="name" >
+                    <span>{{elem.name.toUpperCase()}}</span>
                   </div>
 
                   <div class="job">
                     <span>/{{elem.job}}</span>
                   </div>
 
+                </div>
+
+                <div class="carousel-points">
+                  <i v-for="(item,index) in testimonials" :class="{fas:true, 'fa-circle':true}"
+
+                   @click="clickCircle(index)"
+                   :style="[colorPoint(index)]">
+
+                  </i>
                 </div>
 
               </div>
