@@ -70,7 +70,7 @@
   position: relative;
 }
 #project .main-header-background-container .header-top .search-part .zero-green {
-  background: #20ad96;
+  background: #0088cc;
   position: absolute;
   border-radius: 100%;
   padding-left: 5px;
@@ -95,7 +95,7 @@
   position: absolute;
   right: 0;
   top: 14px;
-  color: #20ad96;
+  color: #0088cc;
 }
 #project .main-header-background-container .main-header-left {
   width: 40%;
@@ -164,7 +164,7 @@
   font-size: 42px;
 }
 #project .main-build-dream-container .title span {
-  color: #20ad96;
+  color: #0088cc;
   font-size: 42px;
   font-family: sans-serif;
 }
@@ -206,10 +206,10 @@
   color: #3f3a64;
 }
 #project .main-build-dream-container .card-build-container-box .start:hover span {
-  color: #20ad96;
+  color: #0088cc;
 }
 #project .main-build-dream-container .card-build-container-box .start:hover i {
-  color: #20ad96;
+  color: #0088cc;
 }
 #project .main-construct {
   width: 100%;
@@ -264,7 +264,7 @@
   margin-bottom: 30px;
 }
 #project .main-construct-container .construct-right-title .title-down span {
-  color: #20ad96;
+  color: #0088cc;
   font-size: 44px;
   padding-left: 3px;
 }
@@ -318,7 +318,7 @@
   height: 100%;
 }
 #project .grey-row-container-boxes .numbers {
-  color: #20ad96;
+  color: #0088cc;
   font-size: 40px;
   font-weight: bold;
   padding-bottom: 15px;
@@ -356,7 +356,7 @@
   font-weight: bold;
 }
 #project .main-cards-row-container .title span {
-  color: #20ad96;
+  color: #0088cc;
   font-size: 50px;
   font-family: sans-serif;
 }
@@ -514,7 +514,7 @@
   font-size: 45px;
 }
 #project .main-learn-yourown-container .left-content .main-content .up-title span {
-  color: #20ad96;
+  color: #0088cc;
   font-size: 45px;
   font-family: sans-serif;
   padding-left: 10px;
@@ -526,7 +526,7 @@
   font-weight: 600;
 }
 #project .main-learn-yourown-container .left-content .main-content .choice-list ul li i {
-  color: #20ad96;
+  color: #0088cc;
   padding-right: 8px;
   font-size: 14px;
 }
@@ -632,7 +632,7 @@
   color: #3f3a64;
 }
 #project .main-learn-anytime-container .right-part .right-box .title span {
-  color: #20ad96;
+  color: #0088cc;
   font-size: 40px;
   padding-left: 5px;
 }
@@ -657,49 +657,54 @@
   color: #fff;
   cursor: pointer;
 }
-#project .main-upcoming-events {
+#project .container-background {
+  position: relative;
+}
+#project .container-background .main-upcoming-events {
   width: 100%;
   height: 850px;
-  border-bottom-right-radius: 330px;
+  border-bottom-right-radius: 240px;
+  background: #fff;
+  z-index: 10;
 }
-#project .main-upcoming-events-container {
+#project .container-background .main-upcoming-events-container {
   width: 1100px;
   height: 100%;
   margin: 0 auto;
 }
-#project .main-upcoming-events-container .upcoming-event-title {
+#project .container-background .main-upcoming-events-container .upcoming-event-title {
   margin: 0 auto;
   width: 395px;
 }
-#project .main-upcoming-events-container .upcoming-event-title .pre-title {
+#project .container-background .main-upcoming-events-container .upcoming-event-title .pre-title {
   color: #696969;
   display: flex;
   justify-content: center;
   font-weight: lighter;
   padding-bottom: 16px;
 }
-#project .main-upcoming-events-container .upcoming-event-title .title {
+#project .container-background .main-upcoming-events-container .upcoming-event-title .title {
   padding-bottom: 50px;
 }
-#project .main-upcoming-events-container .upcoming-event-title .title h1 {
+#project .container-background .main-upcoming-events-container .upcoming-event-title .title h1 {
   display: inline;
   color: #3f3a64;
   font-size: 50px;
 }
-#project .main-upcoming-events-container .upcoming-event-title .title span {
-  color: #20ad96;
+#project .container-background .main-upcoming-events-container .upcoming-event-title .title span {
+  color: #0088cc;
   font-size: 50px;
   padding-left: 5px;
   font-family: sans-serif;
 }
-#project .main-upcoming-events-container .event-container {
+#project .container-background .main-upcoming-events-container .event-container {
   width: 100%;
   height: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#project .main-upcoming-events-container .event-container .event-box {
+#project .container-background .main-upcoming-events-container .event-container .event-box {
   width: 46%;
   height: 30%;
   display: flex;
@@ -707,38 +712,38 @@
   background: #faf8f6;
   border-radius: 10px;
 }
-#project .main-upcoming-events-container .event-container .event-box .info-event {
+#project .container-background .main-upcoming-events-container .event-container .event-box .info-event {
   height: 100%;
   width: 60%;
   padding: 30px;
 }
-#project .main-upcoming-events-container .event-container .event-box .info-event i {
+#project .container-background .main-upcoming-events-container .event-container .event-box .info-event i {
   color: #8c8c8c;
 }
-#project .main-upcoming-events-container .event-container .event-box .info-event span {
+#project .container-background .main-upcoming-events-container .event-container .event-box .info-event span {
   color: #8c8c8c;
 }
-#project .main-upcoming-events-container .event-container .event-box .info-event h3 {
+#project .container-background .main-upcoming-events-container .event-container .event-box .info-event h3 {
   padding-top: 10px;
 }
-#project .main-upcoming-events-container .event-container .event-box .date-event {
+#project .container-background .main-upcoming-events-container .event-container .event-box .date-event {
   height: 100%;
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#project .main-upcoming-events-container .event-container .event-box .date-event span {
+#project .container-background .main-upcoming-events-container .event-container .event-box .date-event span {
   font-size: 20px;
-  color: #20ad96;
+  color: #0088cc;
   padding-top: 10px;
   font-size: 50px;
 }
-#project .main-upcoming-events-container .event-container .event-box .date-event h5 {
+#project .container-background .main-upcoming-events-container .event-container .event-box .date-event h5 {
   padding-bottom: 6px;
   font-size: 17px;
 }
-#project .main-upcoming-events-container .event-container .event-box .date-event h4 {
+#project .container-background .main-upcoming-events-container .event-container .event-box .date-event h4 {
   border-radius: 5px;
   color: #fff;
   background-color: #20ad96;
@@ -747,8 +752,67 @@
   padding: 9px 36px;
   font-size: 14px;
 }
-#project .main-upcoming-events-container .event-container .event-box .date-event h4:hover {
+#project .container-background .main-upcoming-events-container .event-container .event-box .date-event h4:hover {
   background: #534f74;
   color: #fff;
   cursor: pointer;
+}
+#project .container-background .main-upcoming-events-container .view-all-events {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+#project .container-background .main-upcoming-events-container .view-all-events .about {
+  color: #918ea6;
+  padding-right: 3px;
+  font-weight: 500;
+}
+#project .container-background .main-upcoming-events-container .view-all-events .view {
+  border-bottom: 1px solid #e0e0e0;
+  color: #0088cc;
+  font-weight: bold;
+}
+#project .container-background .main-praising-maxcoach {
+  width: 100%;
+  height: 1100px;
+  background: #faf8f6;
+  position: relative;
+  top: -300px;
+  z-index: -1;
+}
+#project .container-background .main-praising-maxcoach-container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+#project .container-background .main-praising-maxcoach-container .main-content {
+  padding-top: 28%;
+  border: 1px solid black;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .title {
+  text-align: center;
+  padding-bottom: 25px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .title h5 {
+  color: #8c89a2;
+  padding-bottom: 15px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .title h1 {
+  display: inline;
+  color: #3f3a64;
+  font-size: 45px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .title span {
+  color: #0088cc;
+  font-size: 45px;
+  padding-left: 7px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
 }
