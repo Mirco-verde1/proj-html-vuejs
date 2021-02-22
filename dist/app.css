@@ -118,12 +118,12 @@
   color: #b4b1be;
 }
 #project .main-header-background-container .main-header-left .green-button {
+  border-radius: 5px;
   color: #fff;
   background-color: #20ad96;
   padding: 18px 20px;
   text-align: center;
   width: 60%;
-  border-radius: 5px;
   cursor: pointer;
 }
 #project .main-header-background-container .main-header-left .green-button:hover {
@@ -234,8 +234,8 @@
   margin: 0 auto;
 }
 #project .main-construct-container .construct-left {
-  width: 50%;
   height: 100%;
+  width: 50%;
   float: left;
   position: relative;
 }
@@ -244,8 +244,8 @@
   left: 40px;
 }
 #project .main-construct-container .construct-right {
-  width: 50%;
   height: 100%;
+  width: 50%;
   float: left;
 }
 #project .main-construct-container .construct-right-title .title-up {
@@ -442,10 +442,10 @@
 }
 #project .main-cards-row-container .card-button .content {
   cursor: pointer;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
   color: #fff;
   background-color: #20ad96;
   padding: 18px 20px;
@@ -534,6 +534,7 @@
   font-size: 15px;
 }
 #project .main-learn-yourown-container .left-content .main-content .get-start-button {
+  border-radius: 5px;
   color: #fff;
   background-color: #20ad96;
   padding: 18px 20px;
@@ -544,7 +545,6 @@
   width: 198px;
   font-size: 15px;
   margin-top: 20px;
-  border-radius: 5px;
 }
 #project .main-learn-yourown-container .left-content .main-content .get-start-button:hover {
   background: #534f74;
@@ -564,32 +564,30 @@
 }
 #project .main-learn-anytime {
   width: 100%;
-  height: 800px;
+  height: 650px;
   position: relative;
-  border: 1px solid black;
 }
 #project .main-learn-anytime .box-image img {
   position: absolute;
   width: 400px;
   transform: translate(0, -50%);
-  top: 51%;
-  left: 11%;
+  top: 46%;
+  left: 10%;
 }
 #project .main-learn-anytime .box-stripes img {
   position: absolute;
-  top: 41%;
+  top: 34%;
   left: 4%;
 }
 #project .main-learn-anytime .points-image img {
   position: absolute;
   left: 38%;
-  top: 49%;
+  top: 46%;
 }
 #project .main-learn-anytime-container {
   width: 1100px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
   position: relative;
 }
 #project .main-learn-anytime-container .left-part {
@@ -597,11 +595,160 @@
   width: 50%;
   float: left;
   height: 100%;
-  border: 1px solid black;
+}
+#project .main-learn-anytime-container .left-part .cellular-image img {
+  position: absolute;
+  left: 14%;
+  top: 10%;
+  width: 27%;
+}
+#project .main-learn-anytime-container .left-part .circle img {
+  position: absolute;
+  left: 41%;
+  top: 10%;
 }
 #project .main-learn-anytime-container .right-part {
   height: 100%;
   width: 50%;
   float: left;
-  border: 1px solid black;
+}
+#project .main-learn-anytime-container .right-part .right-box {
+  height: 70%;
+  width: 90%;
+  margin: 130px auto;
+  padding-left: 53px;
+}
+#project .main-learn-anytime-container .right-part .right-box .pre-title {
+  margin-bottom: 20px;
+  color: #696969;
+  font-size: 15px;
+}
+#project .main-learn-anytime-container .right-part .right-box .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#project .main-learn-anytime-container .right-part .right-box .title h1 {
+  display: inline;
+  color: #3f3a64;
+}
+#project .main-learn-anytime-container .right-part .right-box .title span {
+  color: #20ad96;
+  font-size: 40px;
+  padding-left: 5px;
+}
+#project .main-learn-anytime-container .right-part .right-box .title .anytime-title {
+  color: #3f3a64;
+}
+#project .main-learn-anytime-container .right-part .right-box .description {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #767676;
+}
+#project .main-learn-anytime-container .right-part .right-box .button {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #20ad96;
+  padding: 18px 20px;
+  text-align: center;
+  width: 200px;
+}
+#project .main-learn-anytime-container .right-part .right-box .button:hover {
+  background: #534f74;
+  color: #fff;
+  cursor: pointer;
+}
+#project .main-upcoming-events {
+  width: 100%;
+  height: 850px;
+  border-bottom-right-radius: 330px;
+}
+#project .main-upcoming-events-container {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+#project .main-upcoming-events-container .upcoming-event-title {
+  margin: 0 auto;
+  width: 395px;
+}
+#project .main-upcoming-events-container .upcoming-event-title .pre-title {
+  color: #696969;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  padding-bottom: 16px;
+}
+#project .main-upcoming-events-container .upcoming-event-title .title {
+  padding-bottom: 50px;
+}
+#project .main-upcoming-events-container .upcoming-event-title .title h1 {
+  display: inline;
+  color: #3f3a64;
+  font-size: 50px;
+}
+#project .main-upcoming-events-container .upcoming-event-title .title span {
+  color: #20ad96;
+  font-size: 50px;
+  padding-left: 5px;
+  font-family: sans-serif;
+}
+#project .main-upcoming-events-container .event-container {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#project .main-upcoming-events-container .event-container .event-box {
+  width: 46%;
+  height: 30%;
+  display: flex;
+  margin: 0 17px;
+  background: #faf8f6;
+  border-radius: 10px;
+}
+#project .main-upcoming-events-container .event-container .event-box .info-event {
+  height: 100%;
+  width: 60%;
+  padding: 30px;
+}
+#project .main-upcoming-events-container .event-container .event-box .info-event i {
+  color: #8c8c8c;
+}
+#project .main-upcoming-events-container .event-container .event-box .info-event span {
+  color: #8c8c8c;
+}
+#project .main-upcoming-events-container .event-container .event-box .info-event h3 {
+  padding-top: 10px;
+}
+#project .main-upcoming-events-container .event-container .event-box .date-event {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#project .main-upcoming-events-container .event-container .event-box .date-event span {
+  font-size: 20px;
+  color: #20ad96;
+  padding-top: 10px;
+  font-size: 50px;
+}
+#project .main-upcoming-events-container .event-container .event-box .date-event h5 {
+  padding-bottom: 6px;
+  font-size: 17px;
+}
+#project .main-upcoming-events-container .event-container .event-box .date-event h4 {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #20ad96;
+  padding: 18px 20px;
+  text-align: center;
+  padding: 9px 36px;
+  font-size: 14px;
+}
+#project .main-upcoming-events-container .event-container .event-box .date-event h4:hover {
+  background: #534f74;
+  color: #fff;
+  cursor: pointer;
 }

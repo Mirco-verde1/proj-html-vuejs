@@ -82,10 +82,12 @@ new Vue({
 
  // oggetto che userò nella funzione backTrueOrFalse per
  // modifica background in base al dropdown del menù
+
 backgroundTrue:{
   background:'#20ad96',
   color:'white',
 },
+
 
 results:[
   {
@@ -109,8 +111,9 @@ results:[
   }
 ],
 
-
+// latest featured Courses part
  teachers:[
+
   { code:'_1',
    logo:'Blanche',
    name:'Blache Fields',
@@ -119,6 +122,7 @@ results:[
    students:'50',
    cost:'$40.00'
 },
+
   { code:'_2',
    logo:'Maggie',
    name:'Maggie Strickland',
@@ -127,6 +131,7 @@ results:[
    students:'769',
    cost:'free'
 },
+
   { code:'_3',
    logo:'Maggie',
    name:'Maggie Strickland',
@@ -135,6 +140,7 @@ results:[
    students:'62',
    cost:'$19.00'
 },
+
   { code:'_4',
    logo:'Blanche',
    name:'Blache Fields',
@@ -143,6 +149,7 @@ results:[
    students:'67',
    cost:'$26.00'
 },
+
   { code:'_5',
    logo:'Blanche',
    name:'Blache Fields',
@@ -151,6 +158,7 @@ results:[
    students:'51',
    cost:'$39.00'
 },
+
   { code:'_6',
    logo:'Blanche',
    name:'Blache Fields',
@@ -159,6 +167,53 @@ results:[
    students:'76',
    cost:'$59.00'
 }
+ ],
+
+// Upcoming events part
+
+ events:[
+   {
+     city:'Texas,US',
+     event:'Storytelling Workshop',
+     day:'22',
+     month:'November'
+   },
+
+   {
+     city:'New York,US',
+     event:'Painting Art Contest 2020',
+     day:'10',
+     month:'October'
+   },
+
+   {
+     city:'Hamburg,Germany',
+     event:'International Art Fair 2020',
+     day:'23',
+     month:'November'
+   },
+
+   {
+     city:'Illinois,US',
+     event:'Street Performance: Call for Artist',
+     day:'15',
+     month:'December'
+   },
+
+   {
+     city:'Illinois,US',
+     event:'Consumer Food Safety Education Conference',
+     day:'22',
+     month:'July'
+   },
+
+   {
+     city:'Dubai',
+     event:'How meditation improve your mental health?',
+     day:'12',
+     month:'August'
+   },
+
  ],
 },
       methods: {

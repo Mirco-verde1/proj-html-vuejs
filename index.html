@@ -364,30 +364,109 @@
           <img src="./img/maxcoach-shape150.png" alt="">
 
         </div>
-        
+
         <div class="main-learn-anytime-container">
 
 
           <div class="left-part">
-            <!--
+
             <div class="cellular-image">
-            <img src="./img/cell-image.png" alt="">
-          </div> -->
+              <img src="./img/cell-image.png" alt="">
+            </div>
+            <div class="circle">
+              <img src="./img/screenshot.png" alt="">
+            </div>
+
+          </div>
+
+          <div class="right-part">
+
+            <div class="right-box">
+
+              <div class="pre-title">
+                <span>WHAT ARE YOU LOOKING FOR?</span>
+              </div>
+
+              <div class="title">
+                <h1>Learn on your</h1>
+                <span>mobile</span>
+
+                <div class="anytime-title">
+                  <h1>anytime!</h1>
+                </div>
+
+              </div>
+
+              <div class="description">
+                <p>Save lessons for later and revise or write notes at any time and on
+                  <br> multiple devices on your way. Never interfere with activities of
+                  <br> enjoyment or other precious moments. </p>
+                </div>
+
+                <div class="button">
+                  <span>Download Our App</span>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
 
         </div>
 
-        <div class="right-part">
+        <!-- end Learn Anytime part------------------------------------------------>
 
+
+        <!-- Start Upcoming Events part-------------------------------------------->
+        <div class="main-upcoming-events">
+          <div class="main-upcoming-events-container">
+
+            <div class="upcoming-event-title">
+
+              <div class="pre-title">
+                <span>GET IN CONTACT NOW</span>
+              </div>
+
+              <div class="title">
+                <h1>Upcoming</h1>
+                <span>Events</span>
+              </div>
+
+            </div>
+
+            <!-- Events boxes -->
+
+            <div class="event-container">
+
+              <div class="event-box" v-for="item in events">
+
+                <div class="info-event">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>{{item.city}}</span>
+                  <h3>{{item.event}}</h3>
+                  
+                </div>
+
+                <div class="date-event">
+                  <span>{{item.day}}</span>
+                  <h5>{{item.month.toUpperCase().slice(0,3)}}</h5>
+                  <h4>Get ticket</h4>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
+
 
       </div>
-
-    </div>
-  </div>
-  <!-- end project -->
+      <!-- end project -->
 
 
 
-  <script src="js/script.js" charset="utf-8"></script>
-</body>
-</html>
+      <script src="js/script.js" charset="utf-8"></script>
+    </body>
+    </html>

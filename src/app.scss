@@ -154,7 +154,6 @@ $fontNumbers: 'Mukta', sans-serif;
           .green-button{
             @include button;
             width: 60%;
-            border-radius: 5px;
             cursor: pointer;}
 
             .green-button:hover{
@@ -280,7 +279,7 @@ $fontNumbers: 'Mukta', sans-serif;
                 @include container;
 
                 .construct-left{
-                  @include sharingAndFloat;
+                  @include fiftyFifty;
                   position: relative;
 
                   img{
@@ -289,7 +288,7 @@ $fontNumbers: 'Mukta', sans-serif;
                   }
                 }
                 .construct-right{
-                  @include sharingAndFloat;
+                  @include fiftyFifty;
 
                   &-title{
                     .title-up{
@@ -497,11 +496,11 @@ $fontNumbers: 'Mukta', sans-serif;
 
                           .content{
                             @include finger;
-                            border-radius: 5px;
                             @include flexCenter;
                             @include button;
                             width: 24%;
                             height: 50px;
+
                             span{
                               margin-right: 5px;
                             }
@@ -610,7 +609,6 @@ $fontNumbers: 'Mukta', sans-serif;
                               width: 198px;
                               font-size: 15px;
                               margin-top: 20px;
-                              border-radius: 5px;
 
                             }
                             .get-start-button:hover{
@@ -641,24 +639,23 @@ $fontNumbers: 'Mukta', sans-serif;
 
                     .main-learn-anytime{
                       width: 100%;
-                      height: 800px;
+                      height: 650px;
                       position: relative;
-                      border: 1px solid black;
 
                       .box-image{
                         img{
                           position: absolute;
                           width: 400px;
                           transform: translate(0,-50%);
-                          top: 51%;
-                          left: 11%;
+                          top: 46%;
+                          left: 10%;
                         }
                       }
 
                       .box-stripes{
                         img{
                           position: absolute;
-                          top: 41%;
+                          top: 34%;
                           left: 4%;
                         }
                       }
@@ -667,41 +664,217 @@ $fontNumbers: 'Mukta', sans-serif;
                         img{
                           position: absolute;
                           left: 38%;
-                          top: 49%;
+                          top: 46%;
                         }
                       }
 
                       &-container{
                         @include container;
-                        border: 1px solid black;
                         position: relative;
 
                         .left-part{
                           @include fiftyFifty;
                           height: 100%;
-                          border: 1px solid black;
-                          //
-                          //
-                          // .cellular-image{
-                          //   img{
-                          //     position: absolute;
-                          //     left: 19%;
-                          //     top: 10%;
-                          //     width: 27%;
-                          //   }
-                          // }
+
+                          .cellular-image{
+                            img{
+                              position: absolute;
+                              left: 14%;
+                              top: 10%;
+                              width: 27%;
+                            }
+                          }
+
+                          .circle{
+                            img{
+                              position: absolute;
+                              left: 41%;
+                              top: 10%;
+                            }
+                          }
 
 
                         }
 
                         .right-part{
                           @include fiftyFifty;
-                          border: 1px solid black;
+
+                          .right-box{
+                            height: 70%;
+                            width: 90%;
+                            margin: 130px auto;
+                            padding-left: 53px;
+
+                            .pre-title{
+                              margin-bottom: 20px;
+                              color:$drop-title;
+                              font-size: 15px;
+
+                            }
+
+                            .title{
+                              font-size: 20px;
+                              margin-bottom: 20px;
+
+                              h1{
+                                display: inline;
+                                color:$common-purple;
+                              }
+
+                              span{
+                                color:$common-green;
+                                font-size: 40px;
+                                padding-left: 5px;
+
+                              }
+
+                              .anytime-title{
+                                color:$common-purple;
+
+                              }
+
+                            }
+
+                            .description{
+                              margin-bottom: 20px;
+                              font-size: 15px;
+                              color: #767676;
+                            }
+
+                            .button{
+                              @include button;
+                              width: 200px;
+                            }
+
+                            .button:hover{
+                              @include hoverButton;
+                            }
+                          }
 
 
 
                         }
                       }
                     }
+
+                    // end Learn Anytime  part---------------------------------------
+
+
+                    // Start Upcoming Events part------------------------------------
+
+                    .main-upcoming-events{
+                      width: 100%;
+                      height: 850px;
+                      border-bottom-right-radius:330px;
+
+                      &-container{
+                        @include container;
+
+                        .upcoming-event-title{
+                          margin: 0 auto;
+                          width: 395px;
+
+                          .pre-title{
+                            color:$drop-title;
+                            display: flex;
+                            justify-content: center;
+                            font-weight: lighter;
+                            padding-bottom: 16px;
+                          }
+
+                          .title{
+                            padding-bottom: 50px;
+                            h1{
+                              display: inline;
+                              color:$common-purple;
+                              font-size: 50px;
+                            }
+
+                            span{
+                              color:$common-green;
+                              font-size: 50px;
+                              padding-left: 5px;
+                              font-family: sans-serif;
+                            }
+
+
+                          }
+                        }
+
+                        .event-container{
+                          width: 100%;
+                          height: 65%;
+                          display: flex;
+                          flex-wrap: wrap;
+                          justify-content: center;
+
+                          .event-box{
+                            @include event-box;
+
+                            .info-event{
+                              height: 100%;
+                              width: 60%;
+                              padding: 30px;
+
+                              i{
+                                color: #8c8c8c;
+
+                              }
+
+                              span{
+                                color: #8c8c8c;
+                              }
+
+                              h3{
+                                padding-top: 10px;
+                              }
+
+                            }
+
+                            .date-event{
+                              height: 100%;
+                              width: 40%;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+
+                              span{
+                                font-size: 20px;
+                                color:$common-green;
+                                padding-top: 10px;
+                                font-size: 50px
+                              }
+
+                              h5{
+                                padding-bottom: 6px;
+                                font-size: 17px;
+
+                              }
+
+                              h4{
+                                @include button;
+                                padding: 9px 36px;
+                                font-size: 14px;
+
+
+                              }
+                              h4:hover{
+                                @include hoverButton;
+                              }
+
+
+                            }
+
+
+                          }
+
+                        }
+
+
+                      }
+                    }
+                    // end Upcoming Events-----------------------------------------
+
+
 
                   }
