@@ -1001,6 +1001,8 @@ $fontNumbers: 'Mukta', sans-serif;
                             }
                            }
 
+                 // title under testimonials box
+
                            .bottom-title{
                              position: absolute;
                              top: 76%;
@@ -1008,6 +1010,39 @@ $fontNumbers: 'Mukta', sans-serif;
                              left: 50%;
                              text-align: center;
                              width: 100%;
+
+                             .decoration-images{
+                               position: absolute;
+                               width: 100%;
+
+                               .circle{
+                                 img{
+                                    position: absolute;
+                                    right: 84%;
+                                    top: -48px;
+                                 }
+
+                               }
+
+                               .stripes{
+                                 img{
+                                    position: absolute;
+                                    right: 77%;
+                                    top: 68px;
+                                 }
+
+                               }
+
+                               .semi-circle{
+                                 img{
+                                    position: absolute;
+                                    left: 83%;
+                                    top: 112px;
+                                 }
+
+                               }
+                             }
+
                              .title{
                                padding-bottom: 70px;
 

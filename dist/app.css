@@ -871,6 +871,25 @@
   text-align: center;
   width: 100%;
 }
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .decoration-images {
+  position: absolute;
+  width: 100%;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .decoration-images .circle img {
+  position: absolute;
+  right: 84%;
+  top: -48px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .decoration-images .stripes img {
+  position: absolute;
+  right: 77%;
+  top: 68px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .decoration-images .semi-circle img {
+  position: absolute;
+  left: 83%;
+  top: 112px;
+}
 #project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .title {
   padding-bottom: 70px;
 }
