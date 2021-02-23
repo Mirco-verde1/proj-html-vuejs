@@ -361,6 +361,65 @@ results:[
 
  ],
 
+ // Generalità MaxCoach
+
+ infoMaxCoach:[
+   {
+     address:'382 NE St # Miami,FL 331179-3899',
+     phone:'+1(305)547-9909',
+     open:'9am-5pm EST,Monday-Friday',
+     email:'support@maxcoach.com'
+   }
+ ],
+
+ // data utili per creazione menu footer
+
+ explore:[
+   {
+     name:'Start here'
+   },
+
+   {
+     name:'Blog'
+   },
+
+   {
+     name:'About Us'
+   },
+
+   {
+     name:'Success story'
+   },
+
+   {
+     name:'Courses'
+   },
+
+   {
+     name:'Contact Us'
+   },
+
+ ],
+
+ information:[
+   {
+     name:'Membership'
+   },
+
+   {
+     name:'Purchase guide'
+   },
+
+   {
+     name:'Privacy policy'
+   },
+
+   {
+     name:'Terms of services'
+   },
+
+ ],
+
 
 },
       methods: {

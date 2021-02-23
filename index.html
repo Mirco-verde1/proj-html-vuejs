@@ -423,135 +423,135 @@
         <div class="container-background">
 
 
-        <div class="main-upcoming-events">
-          <div class="main-upcoming-events-container">
+          <div class="main-upcoming-events">
+            <div class="main-upcoming-events-container">
 
-            <div class="upcoming-event-title">
+              <div class="upcoming-event-title">
 
-              <div class="pre-title">
-                <span>GET IN CONTACT NOW</span>
-              </div>
-
-              <div class="title">
-                <h1>Upcoming</h1>
-                <span>Events</span>
-              </div>
-
-            </div>
-
-            <!-- Events boxes -->
-
-            <div class="event-container">
-
-              <div class="event-box" v-for="item in events">
-
-                <div class="info-event">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>{{item.city}}</span>
-                  <h3>{{item.event}}</h3>
-
+                <div class="pre-title">
+                  <span>GET IN CONTACT NOW</span>
                 </div>
 
-                <div class="date-event">
-                  <span>{{item.day}}</span>
-                  <h5>{{item.month.toUpperCase().slice(0,3)}}</h5>
-                  <h4>Get ticket</h4>
-
+                <div class="title">
+                  <h1>Upcoming</h1>
+                  <span>Events</span>
                 </div>
 
               </div>
-            </div>
 
-            <div class="view-all-events">
+              <!-- Events boxes -->
 
-              <div class="about">
-                <span>Excited about our event?</span>
+              <div class="event-container">
+
+                <div class="event-box" v-for="item in events">
+
+                  <div class="info-event">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>{{item.city}}</span>
+                    <h3>{{item.event}}</h3>
+
+                  </div>
+
+                  <div class="date-event">
+                    <span>{{item.day}}</span>
+                    <h5>{{item.month.toUpperCase().slice(0,3)}}</h5>
+                    <h4>Get ticket</h4>
+
+                  </div>
+
+                </div>
               </div>
 
-              <div class="view">
-                <span>View all events</span>
-                <i class="fas fa-long-arrow-alt-right"></i>
-              </div>
+              <div class="view-all-events">
 
+                <div class="about">
+                  <span>Excited about our event?</span>
+                </div>
+
+                <div class="view">
+                  <span>View all events</span>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
-        <!-- end Upcoming Events------------------------------------------------------->
+          <!-- end Upcoming Events------------------------------------------------------->
 
 
-        <!-- Start praising maxcoach-->
+          <!-- Start praising maxcoach-->
 
-        <div class="main-praising-maxcoach">
-          <div class="main-praising-maxcoach-container">
+          <div class="main-praising-maxcoach">
+            <div class="main-praising-maxcoach-container">
 
-            <div class="main-content">
+              <div class="main-content">
 
-              <div class="title">
-                <H5>PEOPLE ARE PRAISING MAXCHOACH</H5>
-                <h1>What make they</h1>
-                <span>love us?</span>
-              </div>
-
-              <!-- mostro i dati e le immagini degli studenti -->
-              <div class="rating-container">
-
-                <div class="card" v-for="(elem,index) in testimonials[idxTestimonials].students">
-
-                  <div class="logo">
-                    <img :src="'./img/testimonial' + elem.logo + '.jpg'" alt="">
-                  </div>
-
-                  <div class="opinion">
-                    <p>{{elem.opinion}}</p>
-                  </div>
-
-                  <div class="name" >
-                    <span>{{elem.name.toUpperCase()}}</span>
-                  </div>
-
-                  <div class="job">
-                    <span>/{{elem.job}}</span>
-                  </div>
-
+                <div class="title">
+                  <H5>PEOPLE ARE PRAISING MAXCHOACH</H5>
+                  <h1>What make they</h1>
+                  <span>love us?</span>
                 </div>
 
-                <div class="carousel-points">
-                  <i v-for="(item,index) in testimonials" :class="{fas:true, 'fa-circle':true}"
+                <!-- mostro i dati e le immagini degli studenti -->
+                <div class="rating-container">
 
-                   @click="clickCircle(index)"
-                   :style="[colorPoint(index)]">
+                  <div class="card" v-for="(elem,index) in testimonials[idxTestimonials].students">
+
+                    <div class="logo">
+                      <img :src="'./img/testimonial' + elem.logo + '.jpg'" alt="">
+                    </div>
+
+                    <div class="opinion">
+                      <p>{{elem.opinion}}</p>
+                    </div>
+
+                    <div class="name" >
+                      <span>{{elem.name.toUpperCase()}}</span>
+                    </div>
+
+                    <div class="job">
+                      <span>/{{elem.job}}</span>
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-points">
+                    <i v-for="(item,index) in testimonials" :class="{fas:true, 'fa-circle':true}"
+
+                    @click="clickCircle(index)"
+                    :style="[colorPoint(index)]">
 
                   </i>
                 </div>
 
                 <!-- bottom title under testimonials cards -->
-                  <div class="bottom-title">
-                    <div class="decoration-images">
+                <div class="bottom-title">
+                  <div class="decoration-images">
 
-                      <div class="circle">
-                        <img src="./img/screenshot-grey.png" alt="">
-                      </div>
-
-                      <div class="stripes">
-                        <img src="./img/maxcoach-shape-01.png" alt="">
-                      </div>
-
-                      <div class="semi-circle">
-                        <img src="./img/maxcoach-shape-02.png" alt="">
-                      </div>
-
-                    </div>
-                    <div class="title">
-                      <h4>Start today for getting</h4>
-                      <span>Online Certification</span>
-                      <h2>You can be your own guiding star with our help!</h2>
-
+                    <div class="circle">
+                      <img src="./img/screenshot-grey.png" alt="">
                     </div>
 
-                    <div class="button">
-                      <span>Get started now</span>
+                    <div class="stripes">
+                      <img src="./img/maxcoach-shape-01.png" alt="">
                     </div>
+
+                    <div class="semi-circle">
+                      <img src="./img/maxcoach-shape-02.png" alt="">
+                    </div>
+
                   </div>
+                  <div class="title">
+                    <h4>Start today for getting</h4>
+                    <span>Online Certification</span>
+                    <h2>You can be your own guiding star with our help!</h2>
+
+                  </div>
+
+                  <div class="button">
+                    <span>Get started now</span>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -559,12 +559,82 @@
 
           </div>
         </div>
-    </div>
       </div>
-      <!-- end project -->
+      <!-- end praising MaxCoach part------------------------------------------------>
+
+
+      <!-- Start footer-------------------------------------------------------------->
+
+      <div class="main-footer">
+        <div class="content-footer">
+
+          <div class="left-part">
+            <div class="address" v-for="item in infoMaxCoach">
+              <h4>Address</h4>
+              <ul>
+                <li >{{item.address}}</li>
+                <li>{{item.phone}}({{item.open}})</li>
+                <li>{{item.email}}</li>
+              </ul>
+            </div>
+
+            <div class="social-logo">
+              <ul>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="right-part">
+
+            <div class="explore-container">
+
+              <h4>Explore</h4>
+              <div class="explore" v-for="elem in explore">
+                <ul>
+                  <li>{{elem.name}}</li>
+                </ul>
+              </div>
+            </div>
+
+          <div class="information-container">
+            <h4>Information</h4>
+            <div class="information" v-for="item in information">
+
+              <ul>
+                <li>{{item.name}}</li>
+              </ul>
+
+            </div>
+          </div>
+
+          </div>
+
+          <div class="title-end-footer">
+            <i class="far fa-copyright"></i>
+            <span>MaxCoach. All rights Reserved</span>
+          </div>
+
+          <div class="upper-button">
+            
+          </div>
+
+        </div>
+      </div>
 
 
 
-      <script src="js/script.js" charset="utf-8"></script>
-    </body>
-    </html>
+
+    </div>
+    <!-- end project -->
+
+
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+  </html>

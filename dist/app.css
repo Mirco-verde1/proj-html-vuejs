@@ -924,3 +924,109 @@
   color: #fff;
   cursor: pointer;
 }
+#project .main-footer {
+  width: 100%;
+  height: 500px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: center;
+}
+#project .main-footer .content-footer {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 200;
+  height: 60%;
+}
+#project .main-footer .content-footer .title-end-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #7b7b7b;
+  font-size: 13px;
+  margin-top: -10px;
+}
+#project .main-footer .content-footer .left-part {
+  height: 100%;
+  width: 50%;
+  float: left;
+  height: 80%;
+}
+#project .main-footer .content-footer .left-part .address h4 {
+  padding: 65px 0 15px 5px;
+  font-weight: bolder;
+}
+#project .main-footer .content-footer .left-part .address ul li {
+  cursor: pointer;
+  z-index: 100;
+  list-style: none;
+  padding: 15px 0 15px 5px;
+  font-size: 13px;
+  color: #7b7b7b;
+}
+#project .main-footer .content-footer .left-part .address ul li:hover {
+  color: #26214c;
+}
+#project .main-footer .content-footer .left-part .social-logo {
+  padding-top: 15px;
+}
+#project .main-footer .content-footer .left-part .social-logo ul li {
+  cursor: pointer;
+  display: inline;
+  list-style: none;
+  padding-left: 38px;
+  color: #7b7b7b;
+  padding: 15px 15px 0 5px;
+  font-size: 22px;
+}
+#project .main-footer .content-footer .left-part .social-logo ul li:hover {
+  color: #26214c;
+}
+#project .main-footer .content-footer .right-part {
+  height: 100%;
+  width: 50%;
+  float: left;
+  height: 80%;
+  display: flex;
+}
+#project .main-footer .content-footer .right-part .explore-container {
+  height: 100%;
+  width: 60%;
+}
+#project .main-footer .content-footer .right-part .explore-container h4 {
+  padding-top: 65px;
+  padding-bottom: 15px;
+}
+#project .main-footer .content-footer .right-part .explore-container .explore {
+  width: 147px;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+#project .main-footer .content-footer .right-part .explore-container .explore ul li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  padding-bottom: 15px;
+}
+#project .main-footer .content-footer .right-part .explore-container .explore ul li:hover {
+  color: #26214c;
+}
+#project .main-footer .content-footer .right-part .information-container h4 {
+  padding-top: 65px;
+  padding-bottom: 15px;
+}
+#project .main-footer .content-footer .right-part .information-container .information {
+  color: #7b7b7b;
+}
+#project .main-footer .content-footer .right-part .information-container .information ul li {
+  cursor: pointer;
+  font-size: 13px;
+  list-style: none;
+  padding-bottom: 15px;
+}
+#project .main-footer .content-footer .right-part .information-container .information ul li:hover {
+  color: #26214c;
+}

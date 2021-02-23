@@ -93,7 +93,7 @@ $fontNumbers: 'Mukta', sans-serif;
               }
 
               li:hover{
-                color:#26214c;
+                color:$hoverList;
               }
             }
           }
@@ -1084,11 +1084,165 @@ $fontNumbers: 'Mukta', sans-serif;
                          }
                        }
 
-
-
                      }
                    }
 
                    }
                  // end praising Maxcoach part----------------------------------
+
+// Start main-footer------------------------------------------------------------
+                 .main-footer{
+                     width: 100%;
+                     height: 500px;
+                     margin-top: -300px;
+                     display: flex;
+                     justify-content: center;
+
+                   .content-footer{
+                     @include container;
+                     position: absolute;
+                     z-index: 200;
+                     height: 60%;
+
+                     .title-end-footer{
+                       width: 100%;
+                       display: flex;
+                       justify-content: center;
+                       color:$menu-footer;
+                       font-size: 13px;
+                       margin-top: -10px;
+                       i{
+
+                       }
+
+                       span{
+
+
+                       }
+                     }
+
+
+                    .left-part{
+                      @include fiftyFifty;
+                      height: 80%;
+
+                      .address{
+                        h4{
+                          padding:65px 0 15px 5px;
+                          font-weight: bolder;
+                        }
+                        ul{
+
+                          li{
+                            @include finger;
+                            z-index: 100;
+                            list-style: none;
+                            padding: 15px 0 15px 5px;
+                            font-size: 13px;
+                            color:$menu-footer;
+
+                          }
+
+                          li:hover{
+                            color:$hoverList;
+                          }
+                        }
+                      }
+
+                      .social-logo{
+                        padding-top: 15px;
+
+                        ul{
+
+                          li{
+                            @include finger;
+                            @include list;
+                            color:$menu-footer;
+                            padding: 15px 15px 0 5px;
+                            font-size: 22px;
+
+                          }
+                          li:hover{
+                            color:$hoverList;
+
+                          }
+                        }
+                      }
+                    }
+
+                    .right-part{
+                      @include fiftyFifty;
+                      height: 80%;
+                      display: flex;
+
+
+                      .explore-container{
+                        height: 100%;
+                        width: 60%;
+
+                        h4{
+                          padding-top: 65px;
+                          padding-bottom: 15px;
+                        }
+
+                        .explore{
+
+                          width: 147px;
+
+                          display: inline-block;
+                          list-style: none;
+                          font-size: 14px;
+                          color:$menu-footer;
+
+                          ul{
+
+                            li{
+                              @include finger;
+                              list-style: none;
+                              font-size: 13px;
+                              padding-bottom: 15px;
+                            }
+                            li:hover{
+                              color:$hoverList;
+
+                            }
+                          }
+                        }
+
+
+                      }
+
+                    .information-container{
+
+                      h4{
+                        padding-top: 65px;
+                        padding-bottom: 15px;
+                      }
+
+                      .information{
+                        color:$menu-footer;
+
+                        ul{
+
+                          li{
+                            @include finger;
+                            font-size: 13px;
+                            list-style: none;
+                            padding-bottom: 15px;
+                          }
+                          li:hover{
+                            color:$hoverList;
+
+                          }
+                        }
+
+                      }
+
+                    }
+
+                    }
+
+                   }
+                 }
                   }
+// end Project!!!
