@@ -72,7 +72,7 @@
 #project .main-header-background-container .header-top .search-part .zero-green {
   background: #0088cc;
   position: absolute;
-  border-radius: 100%;
+  border-radius: 50%;
   padding-left: 5px;
   padding-right: 5px;
   top: 0px;
@@ -294,7 +294,7 @@
   padding: 22px;
   color: #7e7e7e;
   background: #fff;
-  box-shadow: 0 8px 6px -6px lightgrey;
+  box-shadow: 0 8px 27px -6px lightgrey;
   height: 100%;
   width: auto;
 }
@@ -331,7 +331,7 @@
 #project .main-cards-row {
   height: 1260px;
   width: 100%;
-  background-image: linear-gradient(to bottom, #fff 30%, #e6e6e6 100%);
+  background-image: linear-gradient(to bottom, #fff 30%, #f6f6f6 100%);
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 150px;
 }

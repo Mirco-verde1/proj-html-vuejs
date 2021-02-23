@@ -59,6 +59,7 @@ backgroundTrue:{
 
       ],
 
+ // Dati dedicati alla 'Build your Team' row
       build:[
         {
           code:'-1',
@@ -102,6 +103,7 @@ backgroundTrue:{
  ],
 
 
+// con questi dati popolerò la 'grey row'
 results:[
   {
     result:'finisched sessions',
@@ -124,7 +126,8 @@ results:[
   }
 ],
 
-// latest featured Courses part
+
+// Latest Featured Courses row------------
  teachers:[
 
   { code:'_1',
@@ -229,7 +232,7 @@ results:[
 
  ],
 
- // Praising MaxCoach part----------------
+ // Praising MaxCoach part----------------parte dedicata allo slider
 
  testimonials:[
 
@@ -423,12 +426,14 @@ results:[
 
 },
       methods: {
-// attraverso il true/false mostro o meno i drop menu
+
+// attraverso il true/false mostro o meno i dropdown menu
         showingMenu:function(index){
           this.showMenu.show = !this.showMenu.show
           this.showMenu.index = index
         },
 
+// assegno al blocco selezionato per il dropdown le proprietà di backgroundTrue
         backTrueOrFalse:function(index){
           if (this.showMenu.show && this.showMenu.index === index) {
             return this.backgroundTrue;
@@ -439,10 +444,12 @@ results:[
           return this.showMenu.show = false;
         },
 
+
 // tramite il click avvio lo scorrimento immagini dello slider
         clickCircle:function(index){
           return this.idxTestimonials = index;
         },
+
 
 // coloro i points dello slider in base all'index del point cliccato
         colorPoint:function(index){
