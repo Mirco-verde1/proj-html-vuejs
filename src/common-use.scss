@@ -100,3 +100,14 @@
   box-shadow: 0 13px 27px -8px lightgrey;
   border-radius: 5px;
 }
+
+
+@mixin upperButton {
+  padding: 6px 10px;
+  background:$common-green;
+  border-radius: 50%;
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  color:#fff;
+}

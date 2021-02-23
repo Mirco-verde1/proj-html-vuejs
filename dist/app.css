@@ -1030,3 +1030,12 @@
 #project .main-footer .content-footer .right-part .information-container .information ul li:hover {
   color: #26214c;
 }
+#project .main-footer .upper-button a i {
+  padding: 6px 10px;
+  background: #0088cc;
+  border-radius: 50%;
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  color: #fff;
+}

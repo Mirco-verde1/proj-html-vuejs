@@ -1243,6 +1243,14 @@ $fontNumbers: 'Mukta', sans-serif;
                     }
 
                    }
+
+                   .upper-button{
+                     a{
+                       i{
+                         @include upperButton;
+                       }
+                     }
+                   }
                  }
                   }
 // end Project!!!
