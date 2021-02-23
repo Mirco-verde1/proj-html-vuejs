@@ -107,7 +107,7 @@
 }
 #project .main-header-background-container .main-header-left .title {
   font-size: 22px;
-  color: #3f3a64;
+  color: #513e5e;
 }
 #project .main-header-background-container .main-header-left .description {
   font-size: 18px;
@@ -160,7 +160,7 @@
 }
 #project .main-build-dream-container .title h1 {
   display: inline;
-  color: #3f3a64;
+  color: #513e5e;
   font-size: 42px;
 }
 #project .main-build-dream-container .title span {
@@ -197,13 +197,13 @@
   font-weight: bold;
   font-size: 13px;
   cursor: pointer;
-  color: #3f3a64;
+  color: #513e5e;
 }
 #project .main-build-dream-container .card-build-container-box .start i {
   cursor: pointer;
   font-size: 13px;
   padding-left: 4px;
-  color: #3f3a64;
+  color: #513e5e;
 }
 #project .main-build-dream-container .card-build-container-box .start:hover span {
   color: #0088cc;
@@ -260,7 +260,7 @@
 }
 #project .main-construct-container .construct-right-title .title-down h1 {
   display: inline;
-  color: #3f3a64;
+  color: #513e5e;
   margin-bottom: 30px;
 }
 #project .main-construct-container .construct-right-title .title-down span {
@@ -351,7 +351,7 @@
 }
 #project .main-cards-row-container .title h1 {
   display: inline;
-  color: #3f3a64;
+  color: #513e5e;
   font-size: 50px;
   font-weight: bold;
 }
@@ -500,7 +500,7 @@
   margin-top: 90px;
 }
 #project .main-learn-yourown-container .left-content .main-content .up-title {
-  color: #3f3a64;
+  color: #513e5e;
   margin-bottom: 30px;
 }
 #project .main-learn-yourown-container .left-content .main-content .up-title p {
@@ -629,7 +629,7 @@
 }
 #project .main-learn-anytime-container .right-part .right-box .title h1 {
   display: inline;
-  color: #3f3a64;
+  color: #513e5e;
 }
 #project .main-learn-anytime-container .right-part .right-box .title span {
   color: #0088cc;
@@ -637,7 +637,7 @@
   padding-left: 5px;
 }
 #project .main-learn-anytime-container .right-part .right-box .title .anytime-title {
-  color: #3f3a64;
+  color: #513e5e;
 }
 #project .main-learn-anytime-container .right-part .right-box .description {
   margin-bottom: 20px;
@@ -689,7 +689,7 @@
 }
 #project .container-background .main-upcoming-events-container .upcoming-event-title .title h1 {
   display: inline;
-  color: #3f3a64;
+  color: #513e5e;
   font-size: 50px;
 }
 #project .container-background .main-upcoming-events-container .upcoming-event-title .title span {
@@ -776,7 +776,7 @@
 }
 #project .container-background .main-praising-maxcoach {
   width: 100%;
-  height: 1200px;
+  height: 1500px;
   background: #faf8f6;
   position: relative;
   top: -300px;
@@ -804,7 +804,7 @@
 }
 #project .container-background .main-praising-maxcoach-container .main-content .title h1 {
   display: inline;
-  color: #3f3a64;
+  color: #513e5e;
   font-size: 45px;
 }
 #project .container-background .main-praising-maxcoach-container .main-content .title span {
@@ -845,7 +845,7 @@
   margin-top: -52px;
 }
 #project .container-background .main-praising-maxcoach-container .main-content .rating-container .card .name {
-  font-weight: lighter;
+  font-weight: 600;
   padding-bottom: 8px;
 }
 #project .container-background .main-praising-maxcoach-container .main-content .rating-container .card .job {
@@ -853,12 +853,55 @@
 }
 #project .container-background .main-praising-maxcoach-container .main-content .rating-container .carousel-points {
   position: absolute;
-  top: 80%;
-  left: 46%;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size: 10px;
 }
 #project .container-background .main-praising-maxcoach-container .main-content .rating-container .carousel-points i {
   cursor: pointer;
   padding: 10px;
   color: #b7b5c4;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title {
+  position: absolute;
+  top: 76%;
+  transform: translate(-50%, 0);
+  left: 50%;
+  text-align: center;
+  width: 100%;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .title {
+  padding-bottom: 70px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .title h4 {
+  display: inline;
+  color: #3f3a64;
+  font-size: 22px;
+  padding-bottom: 45px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .title span {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .title h2 {
+  color: #3f3a64;
+  font-size: 33px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .button {
+  display: flex;
+  justify-content: center;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .button span {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #20ad96;
+  padding: 18px 20px;
+  text-align: center;
+  padding: 18px 72px;
+}
+#project .container-background .main-praising-maxcoach-container .main-content .rating-container .bottom-title .button span:hover {
+  background: #534f74;
+  color: #fff;
+  cursor: pointer;
 }

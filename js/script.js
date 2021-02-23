@@ -24,7 +24,7 @@ backgroundTrue:{
 // oggetto che userò per colorare il punto premuto nello slider
   coloredPoint:{
     color:'#3f3a64',
-    'font-size': '15px'
+    'font-size': '14px'
   },
 
 
@@ -368,8 +368,6 @@ results:[
         showingMenu:function(index){
           this.showMenu.show = !this.showMenu.show
           this.showMenu.index = index
-          console.log(this.showMenu.show);
-          console.log(this.showMenu.index);
         },
 
         backTrueOrFalse:function(index){
