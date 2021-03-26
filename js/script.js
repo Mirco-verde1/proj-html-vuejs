@@ -2,7 +2,8 @@ new Vue({
   el:'#project',
   data:{
 
-
+show:false,
+transitionName:'fade',
 idxTestimonials: 0,
 idxPoint:0,
 
@@ -26,7 +27,6 @@ backgroundTrue:{
     color:'#3f3a64',
     'font-size': '14px'
   },
-
 
  // oggetto in cui ci sono i dati dell'header
  // con possibilità di espanderlo successivamente
@@ -425,6 +425,7 @@ results:[
 
 
 },
+
       methods: {
 
 // attraverso il true/false mostro o meno i dropdown menu
@@ -458,6 +459,7 @@ results:[
           }
 
         },
+
       },
 
 

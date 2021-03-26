@@ -193,7 +193,7 @@
                 </div>
 
                 <!-- attivo il menu quando la condizione si verifica -->
-                <div class="description" v-if="showMenu.show && showMenu.index === index">
+                <div class="description"  v-if="showMenu.show && showMenu.index === index">
                   {{item.text}}
                 </div>
 
@@ -539,7 +539,7 @@
 
 
                   <!-- clickable points under testimonials -->
-                  <div class="carousel-points">
+                  <div class="carousel-points" >
 
                     <i v-for="(item,index) in testimonials" :class="{fas:true, 'fa-circle':true}"
 

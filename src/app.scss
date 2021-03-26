@@ -341,8 +341,9 @@ $fontNumbers: 'Mukta', sans-serif;
 
                         .description{
                           @include dropMenu;
-
+                      
                         }
+
                       }
                     }
 
@@ -1248,6 +1249,7 @@ $fontNumbers: 'Mukta', sans-serif;
                      a{
                        i{
                          @include upperButton;
+
                        }
                      }
                    }
